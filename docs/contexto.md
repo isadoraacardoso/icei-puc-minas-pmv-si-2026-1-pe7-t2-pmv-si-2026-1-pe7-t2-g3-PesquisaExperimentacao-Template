@@ -141,3 +141,5 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 > **Links Úteis**:
 > - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
+> - [Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease)
+> - [Organização Mundial da Saúde](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
