@@ -34,22 +34,20 @@ Ao longo do projeto, serão analisados diferentes modelos e técnicas de aprendi
 
 ## Objetivos preliminares
 
-Nesta seção, você deve apresentar os objetivos preliminares do trabalho, deixando claro que o objetivo geral é experimentar modelos de aprendizado de máquina adequados para solucionar o problema descrito anteriormente.
+Objetivo geral
 
-Além do objetivo geral, é importante definir pelo menos dois objetivos específicos, que direcionem a investigação de acordo com o foco que o grupo pretende adotar. Esses objetivos específicos podem envolver: 
-* Explorar um determinado tipo de modelagem ou técnica de aprendizado de máquina;
-* Comparar diferentes abordagens para resolver o mesmo problema;
-* Aplicar o modelo em um cenário real ou simulado;
-* Otimizar parâmetros para melhorar métricas específicas de desempenho.
+Experimentar e avaliar modelos de aprendizado de máquina aplicados ao dataset Heart Disease, buscando identificar abordagens capazes de prever a presença de doença cardíaca a partir de características clínicas dos pacientes.
 
-Exemplo:
-Objetivo específico 1: Predizer a tendência de alta, estabilidade ou queda de uma determinada ação em uma janela de tempo definida.
-Objetivo específico 2: Estimar o valor exato da ação ao final do período analisado.
+Objetivos específicos
 
-**Importante:** À medida que a pesquisa/experimentação avança, os objetivos podem ser ajustados ou refinados. Mantenha essa seção atualizada no repositório para refletir o andamento e as novas decisões do projeto.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivo específico 1:
+Realizar a análise exploratória do dataset para compreender a distribuição das variáveis, identificar possíveis padrões nos dados e verificar a existência de valores ausentes ou inconsistências.
+
+Objetivo específico 2:
+Treinar e comparar diferentes modelos de aprendizado de máquina para prever a presença de doença cardíaca a partir das características disponíveis no dataset.
+
+Objetivo específico 3:
+Analisar quais variáveis apresentam maior influência na previsão do modelo, buscando compreender quais fatores podem estar mais associados à presença da doença.
 
 ## Justificativa
 
