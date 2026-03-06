@@ -61,21 +61,17 @@ A escolha deste tema se justifica tanto pela relevância do problema no contexto
 
 ## Público-Alvo
 
-Nesta seção, descreva quem poderá se beneficiar com a sua investigação, apresentando os diferentes perfis de pessoas ou grupos impactados.
+O principal público beneficiado por investigações como esta envolve profissionais e pesquisadores que atuam nas áreas de saúde, ciência de dados e tecnologia aplicada à saúde.
 
-O objetivo aqui não é definir clientes específicos ou papéis exatos dentro da aplicação, mas sim compreender o perfil dos usuários e partes interessadas. Para isso, considere:
-* Conhecimentos prévios relacionados ao domínio do problema e ao uso de tecnologia;
-* Nível de familiaridade com recursos digitais e possíveis barreiras de uso;
-* Contexto profissional e hierárquico, quando aplicável (ex.: nível de decisão, responsabilidades, área de atuação);
-* Necessidades e expectativas que podem ser atendidas pelo projeto.
+Entre os perfis que podem se beneficiar estão:
 
-**Dica:** Seja objetivo e baseie suas descrições em informações reais ou plausíveis para o contexto escolhido. Isso ajudará a manter o foco no desenvolvimento de soluções relevantes e aplicáveis.
+Pesquisadores e estudantes da área de ciência de dados e aprendizado de máquina, interessados em explorar aplicações dessas técnicas em dados médicos e desenvolver modelos capazes de identificar padrões relevantes em conjuntos de dados clínicos.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Profissionais da área da saúde, como médicos e pesquisadores em cardiologia, que podem se beneficiar de ferramentas de análise de dados capazes de auxiliar na identificação de fatores de risco associados a doenças cardíacas.
+
+Instituições acadêmicas e centros de pesquisa, que utilizam datasets públicos para fins de estudo, experimentação e desenvolvimento de novas metodologias de análise de dados.
+
+Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnologia e análise de dados, mas compartilham o interesse em compreender melhor os fatores relacionados às doenças cardiovasculares e em explorar ferramentas que possam apoiar processos de análise e tomada de decisão baseados em dados.
 
 ## Estado da arte
 
