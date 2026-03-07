@@ -76,7 +76,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ## Estado da arte
 Trabalhos Relacionados:
 
-1. Heart‑Disease‑Prediction(abhinavsaurabh):
+<p>1. Heart‑Disease‑Prediction(abhinavsaurabh):</p>
    
 Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina
 
@@ -87,6 +87,7 @@ Abordagem: Implementação de múltiplos algoritmos de aprendizado de máquina, 
 Métricas: Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
 
 Resultados:
+
 Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
 
 Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
