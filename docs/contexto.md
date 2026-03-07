@@ -112,17 +112,17 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
 
-Resultados:
+<b>Resultados:</b>
 
 ⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
 
 ⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
 
-3. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística
+<p><b>2. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística</b></p>
 
-Problema e contexto: Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
+<b>Problema e contexto:</b> Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
 
-Dataset: 
+<p><b>Dataset:</b></p> 
 
 UCI Heart Disease Dataset
 
