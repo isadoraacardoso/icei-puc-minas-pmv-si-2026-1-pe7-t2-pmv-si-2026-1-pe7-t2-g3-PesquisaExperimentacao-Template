@@ -77,7 +77,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 <b>Trabalhos Relacionados:</b>
 
 <p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
-<p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
+<p><b>Problema e contexto:</b> Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
  
 <b>Dataset:</b> UCI Heart Disease Dataset.
 
