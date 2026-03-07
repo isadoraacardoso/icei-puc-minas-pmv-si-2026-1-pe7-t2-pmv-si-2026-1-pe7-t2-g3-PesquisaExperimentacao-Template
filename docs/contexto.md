@@ -81,112 +81,211 @@ Trabalhos Relacionados:
  
 Dataset: UCI Heart Disease Dataset.
 
-<p>⦁	Origem: UCI Machine Learning Repository
+⦁	Origem: UCI Machine Learning Repository
+
 ⦁	Tamanho: 303 registros (subconjunto Cleveland)
+
 ⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
+
 ⦁Variáveis:
+
 ⦁	idade
+
 ⦁	sexo
+
 ⦁	tipo de dor no peito
+
 ⦁	pressão arterial
+
 ⦁	colesterol
+
 ⦁	glicose em jejum
+
 ⦁	frequência cardíaca máxima
+
 ⦁	angina induzida por exercício
+
 ⦁	depressão ST
+
 ⦁	entre outras (14 atributos)
 Abordagem: Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).
+
 Métricas: Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
 Resultados:
+
 ⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
-⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.</p>
+
+⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
+
 3. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística
 
 Problema e contexto: Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
+
 Dataset: UCI Heart Disease Dataset
+
 ⦁	Origem: UCI Machine Learning Repository
+
 ⦁	Tamanho: 303 registros (subconjunto Cleveland)
+
 ⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
+
 ⦁	Variáveis:
+
 ⦁	idade
+
 ⦁	sexo
+
 ⦁	tipo de dor no peito
+
 ⦁	pressão arterial
+
 ⦁	colesterol
+
 ⦁	glicose em jejum
+
 ⦁	frequência cardíaca máxima
+
 ⦁	angina induzida por exercício
+
 ⦁	depressão ST
+
 ⦁	entre outras (14 atributos)
 
 Abordagem:
+
 ⦁	Random Forest
+
 ⦁	Support Vector Machine (SVM)
+
 ⦁	Regressão Logística
+
 Métricas: 
+
 ⦁	Accuracy
+
 ⦁	Precision
+
 ⦁	Recall
+
 ⦁	F1-score
+
 Resultados:
+
 ⦁	Random Forest: 89,7% accuracy (melhor modelo)
+
 ⦁	SVM: 87,0%
+
 ⦁	Regressão Logística: 84,2%
+
 3. Framework de Machine Learning para Predição de Doença Cardíaca
+4. 
 Problema e contexto: Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
+
 Dataset: Heart Disease.
+
 Abordagem: 
+
 ⦁	Random Forest
+
 ⦁	KNN
+
 ⦁	Regressão Logística
+
 ⦁	Otimização com GridSearchCV e RandomizedSearchCV
+
 Métricas:
+
 ⦁	Accuracy
+
 ⦁	Precision
+
 ⦁	Recall
+
 ⦁	F1-score
+
 ⦁	Confusion matrix
+
 Resultados: 
+
 ⦁	Random Forest: 91% accuracy
+
 ⦁	F1-score: 0,89
+
 ⦁	Limitação: tamanho reduzido do dataset e baixa generalização.
-4. Ensemble Framework para Predição de Doenças Cardiovasculares
+
+6. Ensemble Framework para Predição de Doenças Cardiovasculares
+   
 Problema e contexto: Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
 Dataset: 
+
 ⦁	Combinação de datasets médicos: Cleveland, Hungary, Switzerland, Statlog
+
 ⦁	Variáveis: frequência cardíaca máxima, colesterol, dor no peito, glicemia etc.
+
 Abordagem: 
+
 ⦁	Stacking ensemble
+
 ⦁	Random Forest
+
 ⦁	XGBoost
+
 ⦁	Extra Trees
+
 Métricas: 
+
 ⦁	Accuracy
+
 ⦁	ROC-AUC
+
 ⦁	F1-score
+
 ⦁	Sensitivity e Specificity
+
 Resultados: 
+
 ⦁	Accuracy: 92,34%
+
 ⦁	Melhor desempenho que modelos individuais.
-5. Predição de Doença Cardíaca com Dataset Integrado
+
+8. Predição de Doença Cardíaca com Dataset Integrado
+   
 Problema e contexto: Prever doenças cardíacas combinando dados de múltiplos hospitais.
+
 Dataset: 
+
 ⦁	Cleveland
+
 ⦁	Hungary
+
 ⦁	Switzerland
+
 ⦁	Long Beach VA
+
 ⦁	~11 variáveis clínicas
+
 Abordagem:
+
 ⦁	Random Forest
+
 ⦁	SVM
+
 ⦁	Logistic Regression
+
 Métricas: 
+
 ⦁	Accuracy
+
 ⦁	Precision
+
 ⦁	Recall
+
 Resultados: 
+
 ⦁	Random Forest: 92,9% accuracy
+
 ⦁	SVM: 89,7%
+
 ⦁	Logistic Regression: 86,1%
 
 
