@@ -74,12 +74,12 @@ Instituições acadêmicas e centros de pesquisa, que utilizam datasets público
 Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnologia e análise de dados, mas compartilham o interesse em compreender melhor os fatores relacionados às doenças cardiovasculares e em explorar ferramentas que possam apoiar processos de análise e tomada de decisão baseados em dados.
 
 ## Estado da arte
-Trabalhos Relacionados:
+<b>Trabalhos Relacionados:</b>
 
-<p>1. Heart‑Disease‑Prediction(abhinavsaurabh)</p>
+<p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
 <p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
  
-Dataset: UCI Heart Disease Dataset.
+<b>Dataset:</b> UCI Heart Disease Dataset.
 
 ⦁	Origem: UCI Machine Learning Repository
 
@@ -87,7 +87,7 @@ Dataset: UCI Heart Disease Dataset.
 
 ⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
 
-⦁Variáveis:
+<b>Variáveis:</b>
 
 ⦁	idade
 
@@ -108,9 +108,10 @@ Dataset: UCI Heart Disease Dataset.
 ⦁	depressão ST
 
 ⦁	entre outras (14 atributos)
-Abordagem: Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).
+<p><b>Abordagem:</b> Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).</p>
 
-Métricas: Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
+<p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
+
 Resultados:
 
 ⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
