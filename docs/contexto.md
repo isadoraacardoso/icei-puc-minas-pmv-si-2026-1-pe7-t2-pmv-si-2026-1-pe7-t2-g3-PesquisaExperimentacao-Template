@@ -76,17 +76,17 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ## Estado da arte
 Trabalhos Relacionados:
 
-<p>1. Heart‑Disease‑Prediction(abhinavsaurabh):</p>
+<p><b>1. Heart‑Disease‑Prediction(abhinavsaurabh):</b></p>
    
 <b>Problema e contexto:</b> Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina
 
-Dataset: UCI Heart Disease Dataset
+<b>Dataset:</b> UCI Heart Disease Dataset
 
-Abordagem: Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).
+<b>Abordagem:</b> Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).
 
-Métricas: Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
+<b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
 
-Resultados:
+<b>Resultados:</b>
 
 Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
 
