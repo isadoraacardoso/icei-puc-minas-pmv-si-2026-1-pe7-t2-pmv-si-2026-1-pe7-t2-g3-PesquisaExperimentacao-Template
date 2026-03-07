@@ -305,22 +305,15 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ⦁	Logistic Regression: 86,1%
 
 
+<b>Síntese Crítica</b>
+
+<p>Após a análise dos projetos, observou-se que eles buscam prever doenças cardiovasculares por meio da utilização de técnicas de aprendizagem de máquina, possibilitando a avaliação do risco dessas doenças em tempo real. Em geral, os estudos apresentam abordagens semelhantes, utilizando algoritmos de aprendizagem supervisionada, como Random Forest, Regressão Logística e SVM, além de métricas de avaliação comuns, como accuracy, precision, recall e F1-score. Entretanto, diferem quanto aos dados utilizados, já que alguns trabalhos utilizam o subconjunto Cleveland, enquanto outros empregam diferentes conjuntos de dados, como Hungary, Statlog ou Long Beach VA.</p>
+
+<p>Em relação às lacunas identificadas, destaca-se que muitos estudos trabalham com conjuntos de dados relativamente pequenos, o que pode limitar a generalização dos resultados. Além disso, raramente são discutidas questões éticas e possíveis vieses, como desigualdades relacionadas a sexo, idade ou características populacionais, aspectos importantes para garantir maior confiabilidade e equidade nos modelos desenvolvidos.</p>
+
+<p>O projeto em desenvolvimento também tem como objetivo a previsão de doenças cardíacas, porém pretende explorar o potencial do Cardiovascular Disease Dataset (Cardio Train) para validar modelos em cenários hospitalares e acadêmicos, contribuindo para a detecção preventiva de doenças cardiovasculares e ampliando as possibilidades de aplicação dessas soluções na área da saúde.</p>
+
 Nesta seção, descreva abordagens da literatura que tratam problemas semelhantes ao seu. Seu objetivo é documentar métodos, dados, métricas e resultados.
-
-### O que levantar (mínimo 5 trabalhos)
-Para **cada estudo encontrado** aderente à temática do grupo, registre de forma objetiva:
-* Problema e contexto: que problema o trabalho buscou resolver e em qual domínio/cenário foi aplicado.
-* Dados (dataset): origem, tamanho, período, variáveis/atributos, pré-processamentos relevantes (faltantes, balanceamento, normalização).
-* Abordagem/algoritmos: algoritmos utilizados e parâmetros principais (quando informados).
-* Métricas de avaliação: quais e por quê (ex.: Acurácia, F1, AUC, RMSE, MAE, etc.).
-* Resultados: principais números, comparações internas, limitações citadas e conclusões.
-
-* Texto-síntese crítico (2–4 parágrafos) respondendo:
-- O que os estudos concordam? Onde divergem?
-- Quais lacunas permanecem (dados, métricas, cenários, limitações técnicas/éticas)?
-- Como seu projeto se alinha aos estudos identificados?
-
-**Dica:** Prefira artigos dos últimos 5 anos ou referências clássicas indispensáveis.
 
 ### Ferramentas inteligentes permitidas
 Você pode utilizar: Perplexity, SciSpace, Elicit, Research Rabbit, Litmaps.
