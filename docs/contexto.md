@@ -127,6 +127,73 @@ Use-as para descoberta, organização e triagem de literatura.
 > - [ACM Digital Library](https://dl.acm.org/)
 
 # Descrição do _dataset_ selecionado
+# Descrição Cardiovascular Disease Dataset 
+
+**1. Identificação e origem:**
+
+- Nome do dataset: 
+Cardiovascular Disease Dataset (Cardio Train)
+
+- Link de acesso: 
+https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset
+
+- Fonte:
+Dataset disponibilizado no repositório Kaggle, plataforma de compartilhamento de dados utilizada pela comunidade de ciência de dados.
+
+- Instituição de origem:
+Dados coletados durante exames médicos de pacientes (dataset frequentemente associado a pesquisas médicas de risco cardiovascular).
+
+- Licença de uso:
+Uso educacional e para pesquisa científica conforme os termos do repositório Kaggle.
+
+**2. Visão geral do conjunto de dados:**
+
+O dataset contém informações médicas e comportamentais utilizadas para analisar a presença ou ausência de doença cardiovascular em pacientes.
+
+Total de registros: 70.000 pacientes.
+
+Total de atributos: 13 variáveis.
+
+Tipo de dados: dados estruturados tabulares no formato CSV, com separador ";" (ponto e vírgula).
+
+Período coberto: não especificado no dataset. Todos os dados foram coletados no momento da avaliação médica dos pacientes.
+
+Contextualização: o conjunto de dados reúne três tipos principais de variáveis, que são elas:
+- Objetivas: informações factuais do paciente;
+- Exame médico: resultados de medições clínicas;
+- Subjetivas: hábitos informados pelo paciente.
+
+O objetivo principal do dataset é identificar fatores associados ao risco de doenças cardiovasculares e permitir o desenvolvimento de modelos de previsão em saúde.
+
+**3. Atributos do dataset:**
+
+| Atributo | Descrição | Tipo | Unidade | Exemplos de valores |
+|----------|-----------|------|--------|--------------------|
+| id | Identificador único do paciente | Inteiro | - | 0, 1, 2 |
+| age | Idade do paciente | Inteiro | dias | 18393 |
+| gender | Gênero do paciente (código categórico) | Categórico | - | 1, 2 |
+| height | Altura do paciente | Inteiro | cm | 165, 180 |
+| weight | Peso do paciente | Float | kg | 62.0, 75.5 |
+| ap_hi | Pressão arterial sistólica | Inteiro | mmHg | 120, 140 |
+| ap_lo | Pressão arterial diastólica | Inteiro | mmHg | 80, 90 |
+| cholesterol | Nível de colesterol | Categórico | - | 1 = normal, 2 = acima do normal, 3 = muito acima do normal |
+| gluc | Nível de glicose | Categórico | - | 1 = normal, 2 = acima do normal, 3 = muito acima do normal |
+| smoke | Indica se o paciente fuma | Binário | - | 0 = não, 1 = sim |
+| alco | Indica consumo de álcool | Binário | - | 0 = não, 1 = sim |
+| active | Indica prática de atividade física | Binário | - | 0 = não, 1 = sim |
+| cardio | Presença de doença cardiovascular (variável alvo) | Binário | - | 0 = ausência, 1 = presença |
+
+**4. Qualidade dos dados**
+
+Os dados apresentam boa integridade estrutural. 
+
+O conjunto de dados não apresenta valores ausentes explícitos nas colunas. Todas as variáveis possuem valores preenchidos para os registros disponíveis. No entanto, mesmo sem valores nulos, tem presença de valores implícitos inválidos, como valores iguais a zero em variáveis que não deveriam assumir esse valor, por exemplo, pressão arterial igual a 1.
+
+{Imagem}
+
+
+
+---
 
 Nesta seção, apresente uma visão clara e objetiva do dataset selecionado, incluindo:
 * Identificação e origem – Nome, link de acesso, fonte (instituição, repositório, API etc.) e licença de uso.
@@ -136,6 +203,7 @@ Nesta seção, apresente uma visão clara e objetiva do dataset selecionado, inc
 
 **Dica:** Seja objetivo, mas inclua detalhes suficientes para que outra pessoa possa entender e reutilizar o conjunto de dados sem buscar informações extras.
 
+--- 
 # Canvas analítico
 
 Nesta seção é apresentado o **Canvas Analítico** do projeto, uma ferramenta utilizada para estruturar e organizar as principais dimensões da análise de dados a ser realizada. O canvas auxilia na definição do problema investigado, das fontes de dados utilizadas, das hipóteses consideradas, das etapas de implementação da análise e das formas de validação dos resultados.
