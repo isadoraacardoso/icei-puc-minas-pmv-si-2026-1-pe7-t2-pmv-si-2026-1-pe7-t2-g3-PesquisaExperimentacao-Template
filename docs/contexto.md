@@ -313,8 +313,6 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p>O projeto em desenvolvimento também tem como objetivo a previsão de doenças cardíacas, porém pretende explorar o potencial do Cardiovascular Disease Dataset (Cardio Train) para validar modelos em cenários hospitalares e acadêmicos, contribuindo para a detecção preventiva de doenças cardiovasculares e ampliando as possibilidades de aplicação dessas soluções na área da saúde.</p>
 
-Nesta seção, descreva abordagens da literatura que tratam problemas semelhantes ao seu. Seu objetivo é documentar métodos, dados, métricas e resultados.
-
 ### Ferramentas inteligentes permitidas
 Você pode utilizar: Perplexity, SciSpace, Elicit, Research Rabbit, Litmaps.
 Use-as para descoberta, organização e triagem de literatura. 
