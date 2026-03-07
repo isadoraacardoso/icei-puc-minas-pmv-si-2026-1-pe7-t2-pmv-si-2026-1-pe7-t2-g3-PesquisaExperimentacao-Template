@@ -187,11 +187,9 @@ O objetivo principal do dataset é identificar fatores associados ao risco de do
 
 Os dados apresentam boa integridade estrutural. 
 
-O conjunto de dados não apresenta valores ausentes explícitos nas colunas. Todas as variáveis possuem valores preenchidos para os registros disponíveis. No entanto, mesmo sem valores nulos, tem presença de valores implícitos inválidos, como valores iguais a zero em variáveis que não deveriam assumir esse valor, por exemplo, pressão arterial igual a 1.
+O conjunto de dados não apresenta valores ausentes explícitos nas colunas. Todas as variáveis possuem valores preenchidos para os registros disponíveis. No entanto, mesmo sem valores nulos, tem presença de valores implícitos inválidos, como valores iguais a um em variáveis que não deveriam assumir esse valor, como no exemplo abaixo onde a pressão arterial sistólica está igual a 1.
 
-{Imagem}
-
-
+<img width="1143" height="272" alt="image" src="https://github.com/user-attachments/assets/11f4d523-03cb-4b5c-9f18-045f5c7f2b9a" />
 
 ---
 
