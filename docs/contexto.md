@@ -78,7 +78,7 @@ Trabalhos Relacionados:
 
 <p>1. Heart‑Disease‑Prediction(abhinavsaurabh):</p>
    
-Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina
+<b>Problema e contexto:</b> Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina
 
 Dataset: UCI Heart Disease Dataset
 
