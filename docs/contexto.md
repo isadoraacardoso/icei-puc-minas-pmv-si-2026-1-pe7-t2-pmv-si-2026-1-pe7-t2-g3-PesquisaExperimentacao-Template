@@ -122,7 +122,9 @@ Resultados:
 
 Problema e contexto: Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
 
-Dataset: UCI Heart Disease Dataset
+Dataset: 
+
+UCI Heart Disease Dataset
 
 ⦁	Origem: UCI Machine Learning Repository
 
