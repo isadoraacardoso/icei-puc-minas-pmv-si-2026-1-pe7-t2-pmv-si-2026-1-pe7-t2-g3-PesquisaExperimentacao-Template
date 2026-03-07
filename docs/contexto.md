@@ -79,7 +79,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 <p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
 <p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
  
-<b>Dataset:</b>UCI Heart Disease Dataset.
+<b>Dataset:</b> UCI Heart Disease Dataset.
 
 ⦁	Origem: UCI Machine Learning Repository
 
@@ -122,9 +122,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <b>Problema e contexto:</b> Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
 
-<p><b>Dataset:</b></p> 
-
-UCI Heart Disease Dataset
+<b>Dataset:</b> UCI Heart Disease Dataset
 
 ⦁	Origem: UCI Machine Learning Repository
 
@@ -154,7 +152,7 @@ UCI Heart Disease Dataset
 
 ⦁	entre outras (14 atributos)
 
-Abordagem:
+<b>Abordagem:</b>
 
 ⦁	Random Forest
 
@@ -162,7 +160,7 @@ Abordagem:
 
 ⦁	Regressão Logística
 
-Métricas: 
+<b>Métricas:</b> 
 
 ⦁	Accuracy
 
@@ -172,7 +170,7 @@ Métricas:
 
 ⦁	F1-score
 
-Resultados:
+<b>Resultados:</b>
 
 ⦁	Random Forest: 89,7% accuracy (melhor modelo)
 
@@ -180,13 +178,21 @@ Resultados:
 
 ⦁	Regressão Logística: 84,2%
 
-3. Framework de Machine Learning para Predição de Doença Cardíaca
-4. 
-Problema e contexto: Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
+<p><b>3. Framework de Machine Learning para Predição de Doença Cardíaca</b></p>
+ 
+<b>Problema e contexto:</b> Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
 
-Dataset: Heart Disease.
+<b>Dataset:</b> Heart Disease.
 
-Abordagem: 
+⦁	Origem: UCI Machine Learning Repository
+
+⦁	Tamanho: 303 pacientes
+
+⦁	Variáveis: 13 variáveis clínicas + variável alvo
+
+⦁	Atributos principais: idade, colesterol, pressão arterial, tipo de dor torácica, frequência cardíaca máxima, etc.
+
+<b>Abordagem:</b> 
 
 ⦁	Random Forest
 
@@ -196,7 +202,7 @@ Abordagem:
 
 ⦁	Otimização com GridSearchCV e RandomizedSearchCV
 
-Métricas:
+<b>Métricas:</b>
 
 ⦁	Accuracy
 
@@ -208,7 +214,7 @@ Métricas:
 
 ⦁	Confusion matrix
 
-Resultados: 
+<b>Resultados:</b> 
 
 ⦁	Random Forest: 91% accuracy
 
@@ -216,16 +222,17 @@ Resultados:
 
 ⦁	Limitação: tamanho reduzido do dataset e baixa generalização.
 
-6. Ensemble Framework para Predição de Doenças Cardiovasculares
+<p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
    
-Problema e contexto: Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
-Dataset: 
+<b>Problema e contexto:</b> Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
+
+<b>Dataset:</b> 
 
 ⦁	Combinação de datasets médicos: Cleveland, Hungary, Switzerland, Statlog
 
 ⦁	Variáveis: frequência cardíaca máxima, colesterol, dor no peito, glicemia etc.
 
-Abordagem: 
+<b>Abordagem:</b> 
 
 ⦁	Stacking ensemble
 
@@ -235,7 +242,7 @@ Abordagem:
 
 ⦁	Extra Trees
 
-Métricas: 
+<b>Métricas:</b> 
 
 ⦁	Accuracy
 
@@ -245,17 +252,17 @@ Métricas:
 
 ⦁	Sensitivity e Specificity
 
-Resultados: 
+<b>Resultados:</b> 
 
 ⦁	Accuracy: 92,34%
 
 ⦁	Melhor desempenho que modelos individuais.
 
-8. Predição de Doença Cardíaca com Dataset Integrado
+<p><b>5. Predição de Doença Cardíaca com Dataset Integrado</b></p>
    
-Problema e contexto: Prever doenças cardíacas combinando dados de múltiplos hospitais.
+<b>Problema e contexto:</b> Prever doenças cardíacas combinando dados de múltiplos hospitais.
 
-Dataset: 
+<b>Dataset:</b> 
 
 ⦁	Cleveland
 
@@ -267,7 +274,7 @@ Dataset:
 
 ⦁	~11 variáveis clínicas
 
-Abordagem:
+<b>Abordagem:</b>
 
 ⦁	Random Forest
 
@@ -275,7 +282,7 @@ Abordagem:
 
 ⦁	Logistic Regression
 
-Métricas: 
+<b>Métricas:</b> 
 
 ⦁	Accuracy
 
@@ -283,7 +290,7 @@ Métricas:
 
 ⦁	Recall
 
-Resultados: 
+<b>Resultados:</b> 
 
 ⦁	Random Forest: 92,9% accuracy
 
