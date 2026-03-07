@@ -330,7 +330,6 @@ Use-as para descoberta, organização e triagem de literatura.
 > - [Science Direct](https://www.sciencedirect.com/)
 > - [ACM Digital Library](https://dl.acm.org/)
 
-# Descrição do _dataset_ selecionado
 # Descrição Cardiovascular Disease Dataset 
 
 **1. Identificação e origem:**
