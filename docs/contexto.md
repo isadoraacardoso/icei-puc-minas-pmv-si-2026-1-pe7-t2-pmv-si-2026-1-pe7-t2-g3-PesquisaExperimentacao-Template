@@ -76,13 +76,15 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ## Estado da arte
 Trabalhos Relacionados:
 
-1. Heart‑Disease‑Prediction(abhinavsaurabh)
- <p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
+<p>1. Heart‑Disease‑Prediction(abhinavsaurabh)</p>
+<p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
+ 
 Dataset: UCI Heart Disease Dataset.
-⦁	Origem: UCI Machine Learning Repository
+
+<p>⦁	Origem: UCI Machine Learning Repository
 ⦁	Tamanho: 303 registros (subconjunto Cleveland)
 ⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
-⦁	Variáveis:
+⦁Variáveis:
 ⦁	idade
 ⦁	sexo
 ⦁	tipo de dor no peito
@@ -97,7 +99,7 @@ Abordagem: Implementação de múltiplos algoritmos de aprendizado de máquina, 
 Métricas: Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC
 Resultados:
 ⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
-⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
+⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.</p>
 3. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística
 
 Problema e contexto: Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
