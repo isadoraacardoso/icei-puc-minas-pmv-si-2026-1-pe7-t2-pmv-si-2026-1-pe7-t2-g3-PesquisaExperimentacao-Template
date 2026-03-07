@@ -79,7 +79,8 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 <p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
 <p>Problema e contexto: Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
  
-<b>Dataset:</b> UCI Heart Disease Dataset.
+<b>Dataset:</b> 
+UCI Heart Disease Dataset.
 
 ⦁	Origem: UCI Machine Learning Repository
 
