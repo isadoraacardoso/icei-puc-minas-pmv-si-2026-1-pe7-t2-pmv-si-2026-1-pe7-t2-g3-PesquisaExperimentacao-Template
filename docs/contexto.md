@@ -85,7 +85,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 ⦁	Tamanho: 303 registros (subconjunto Cleveland)
 
-⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
 
 <b>Variáveis:</b>
 
@@ -128,7 +128,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 ⦁	Tamanho: 303 registros (subconjunto Cleveland)
 
-⦁	Período: dados clínicos coletados entre as décadas de 1980 e 1990
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
 
 ⦁	Variáveis:
 
@@ -192,6 +192,8 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 ⦁	Atributos principais: idade, colesterol, pressão arterial, tipo de dor torácica, frequência cardíaca máxima, etc.
 
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
+
 <b>Abordagem:</b> 
 
 ⦁	Random Forest
@@ -231,6 +233,8 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ⦁	Combinação de datasets médicos: Cleveland, Hungary, Switzerland, Statlog
 
 ⦁	Variáveis: frequência cardíaca máxima, colesterol, dor no peito, glicemia etc.
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
 
 <b>Abordagem:</b> 
 
@@ -273,6 +277,8 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ⦁	Long Beach VA
 
 ⦁	~11 variáveis clínicas
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024.
 
 <b>Abordagem:</b>
 
