@@ -313,22 +313,6 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p>O projeto em desenvolvimento também tem como objetivo a previsão de doenças cardíacas, porém pretende explorar o potencial do Cardiovascular Disease Dataset (Cardio Train) para validar modelos em cenários hospitalares e acadêmicos, contribuindo para a detecção preventiva de doenças cardiovasculares e ampliando as possibilidades de aplicação dessas soluções na área da saúde.</p>
 
-### Ferramentas inteligentes permitidas
-Você pode utilizar: Perplexity, SciSpace, Elicit, Research Rabbit, Litmaps.
-Use-as para descoberta, organização e triagem de literatura. 
-
-**Atenção:** 
-* Sempre acesse a fonte original (PDF/artigo) antes de citar; verifique números e conclusões.
-* Registre DOI/URL oficial e dados bibliográficos completos.
-* Evite “alucinações” das ferramentas: desconfie de referências sem DOI ou que você não consiga localizar oficialmente.
-* Use as ferramentas inteligentes para mapear redes de citação (Research Rabbit), mapas de tópicos (Litmaps), filtrar por período e gerar resumos iniciais (Perplexity/SciSpace/Elicit).
-* Leia os trabalhos mais promissores e descarte estudos fora de escopo.
-
-> **Links Úteis**:
-> - [Google Scholar](https://scholar.google.com/)
-> - [IEEE Xplore](https://ieeexplore.ieee.org/Xplore/home.jsp)
-> - [Science Direct](https://www.sciencedirect.com/)
-> - [ACM Digital Library](https://dl.acm.org/)
 
 # Descrição Cardiovascular Disease Dataset 
 
