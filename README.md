@@ -12,12 +12,12 @@ Com base nessa análise, o projeto busca experimentar diferentes modelos de apre
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* [Isadora Aparecida Cardoso Carvalho](https://github.com/isadoraacardoso)
-* [Rafael Fernandes Marques](https://github.com/marquesrf-pucmg)
-* [Jaime Bispo Dos Santos](https://github.com)
+- [Giulia Fernandes Donato de Mattos](https://github.com/giulia-donato)
+- [Isadora Aparecida Cardoso Carvalho](https://github.com/isadoraacardoso)
+- [Jaime Bispo Dos Santos](https://github.com/Jaimebispo)
+- [Rafael Fernandes Marques](https://github.com/marquesrf-pucmg)
+- [Rômulo Ferraz Chaves](https://github.com/RomuloFerrazChaves)
+- [Samuel Marques Pereira](https://github.com/oSam2)
 
 ## Orientador
 
