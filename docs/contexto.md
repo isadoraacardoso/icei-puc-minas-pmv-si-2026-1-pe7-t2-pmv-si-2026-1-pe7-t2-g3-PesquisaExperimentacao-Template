@@ -1,104 +1,317 @@
 # Introdução
 
-Texto descritivo introdutório apresentando a visão geral do projeto a ser desenvolvido considerando o contexto em que ele se insere, os objetivos gerais, a justificativa e o público-alvo do projeto.
+As doenças cardiovasculares representam uma das principais causas de mortalidade no mundo. De acordo com a Organização Mundial da Saúde (OMS), milhões de pessoas morrem anualmente em decorrência dessas doenças, muitas vezes devido ao diagnóstico tardio ou à dificuldade em identificar fatores de risco de forma precoce. Nesse contexto, a utilização de técnicas de análise de dados e aprendizado de máquina é uma abordagem promissora para auxiliar profissionais da saúde na identificação de padrões associados à presença de doenças cardíacas.
+
+A priori, o projeto de pesquisa e experimentação tem como objetivo investigar e experimentar modelos de aprendizado de máquina aplicados ao dataset Heart Disease, disponível no repositório da UCI Machine Learning Repository. Esse conjunto de dados reúne informações clínicas e demográficas de pacientes coletadas em diferentes instituições hospitalares, incluindo características como idade, sexo, pressão arterial, níveis de colesterol e resultados de exames cardíacos.
+
+Além disso, temos como proposta explorar esses dados para compreender quais variáveis apresentam maior relação com a ocorrência de doença cardíaca e avaliar modelos capazes de prever a presença da doença a partir dessas características. A investigação busca contribuir para a compreensão de como técnicas de mineração de dados podem apoiar processos de análise em contextos médicos.
+
+Assim, nosso projeto se insere no contexto de experimentação acadêmica em ciência de dados e aprendizado de máquina, com foco na análise de dados clínicos e na avaliação de modelos preditivos que possam auxiliar na identificação de riscos associados a doenças cardiovasculares.
 
 ## Problema
 
-Nesta seção, você deve apresentar o problema que a sua investigação/experimentação busca resolver. Por exemplo, caso o _dataset_ selecionado, seja um _dataset_ que contenha uma série temporal com o preço de diversas ações da bolsa de valores, o problema pode estar relacionado a dificuldade em saber a melhor hora (hora certa??) de comprar ou então, de executar a venda de uma determinada ação.
+As doenças cardíacas são frequentemente diagnosticadas por meio da análise conjunta de diversos exames clínicos e históricos médicos dos pacientes. No entanto, a interpretação dessas informações pode ser complexa, especialmente quando diferentes variáveis precisam ser consideradas simultaneamente para identificar padrões associados à presença da doença.
 
-Descreva ainda o contexto em que essa aplicação será usada, se houver: empresa parceira, tecnologias etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+Em muitos casos, médicos e profissionais de saúde precisam analisar um grande volume de informações clínicas, como idade, níveis de colesterol, pressão arterial, frequência cardíaca e resultados de exames específicos. A dificuldade em identificar rapidamente relações entre essas variáveis pode tornar o processo de diagnóstico mais demorado ou menos preciso.
 
-**Atenção:** Nesta etapa, apresente apenas informações reais e já confirmadas. Não antecipe requisitos técnicos detalhados, funcionalidades específicas ou desenhos de projeto — essa parte será desenvolvida posteriormente.
+Nesse contexto, técnicas de análise de dados e aprendizado de máquina podem auxiliar na identificação de padrões que indicam maior probabilidade de ocorrência de doença cardíaca. A partir da análise de dados históricos de pacientes, é possível explorar modelos capazes de reconhecer combinações de características associadas ao diagnóstico da doença.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+O presente projeto utiliza o dataset Heart Disease como base para experimentação. Esse conjunto de dados contém registros clínicos de pacientes e inclui diversas variáveis médicas que podem estar relacionadas à presença de doença cardíaca. O problema investigado neste trabalho está relacionado à dificuldade de identificar, de forma sistemática, quais fatores apresentam maior influência no diagnóstico e se modelos de aprendizado de máquina são capazes de realizar essa previsão de forma confiável.
+
+A investigação será conduzida em um contexto acadêmico, utilizando ferramentas de análise de dados e bibliotecas de aprendizado de máquina amplamente utilizadas na área de ciência de dados. O objetivo é explorar o potencial dessas técnicas para apoiar a análise de dados médicos e compreender melhor os padrões presentes no conjunto de dados estudado.
 
 ## Questão de pesquisa
 
-A questão de pesquisa é o ponto de partida e a base orientadora de todo o trabalho a ser desenvolvido. Ela deve estar diretamente alinhada ao problema identificado e expressar, de forma clara, o que se deseja investigar ou comprovar.
+A questão de pesquisa orienta o desenvolvimento deste projeto e define o foco principal da investigação.
 
-O papel da questão de pesquisa é guiar todas as etapas do projeto — desde a definição da metodologia até a análise e interpretação dos resultados. Ao término da investigação ou experimentação, o objetivo é que seja possível responder a essa questão de forma fundamentada, utilizando evidências obtidas ao longo do processo.
+Diante do problema apresentado, busca-se investigar se é possível utilizar técnicas de aprendizado de máquina para identificar padrões relevantes nos dados clínicos de pacientes e prever a presença de doença cardíaca com base nessas informações.
 
-**Dica:** Formule a questão de pesquisa de forma específica e objetiva, evitando perguntas muito amplas ou genéricas. Pergunte-se: "Ao final do trabalho, minha pesquisa terá condições de responder claramente a essa pergunta?"
+Dessa forma, a questão de pesquisa que orienta este trabalho é:
 
-> **Links Úteis**:
-> - [Questão de pesquisa](https://www.enago.com.br/academy/how-to-develop-good-research-question-types-examples/)
-> - [Problema de pesquisa](https://blog.even3.com.br/problema-de-pesquisa/)
+É possível utilizar modelos de aprendizado de máquina para prever a presença de doença cardíaca em pacientes com base em características clínicas presentes no dataset Heart Disease?
+
+Ao longo do projeto, serão analisados diferentes modelos e técnicas de aprendizado de máquina com o objetivo de avaliar sua capacidade de identificar padrões nos dados e responder a essa questão de forma fundamentada.
 
 ## Objetivos preliminares
 
-Nesta seção, você deve apresentar os objetivos preliminares do trabalho, deixando claro que o objetivo geral é experimentar modelos de aprendizado de máquina adequados para solucionar o problema descrito anteriormente.
+Objetivo geral
 
-Além do objetivo geral, é importante definir pelo menos dois objetivos específicos, que direcionem a investigação de acordo com o foco que o grupo pretende adotar. Esses objetivos específicos podem envolver: 
-* Explorar um determinado tipo de modelagem ou técnica de aprendizado de máquina;
-* Comparar diferentes abordagens para resolver o mesmo problema;
-* Aplicar o modelo em um cenário real ou simulado;
-* Otimizar parâmetros para melhorar métricas específicas de desempenho.
+Experimentar e avaliar modelos de aprendizado de máquina aplicados ao dataset Heart Disease, buscando identificar abordagens capazes de prever a presença de doença cardíaca a partir de características clínicas dos pacientes.
 
-Exemplo:
-Objetivo específico 1: Predizer a tendência de alta, estabilidade ou queda de uma determinada ação em uma janela de tempo definida.
-Objetivo específico 2: Estimar o valor exato da ação ao final do período analisado.
+Objetivos específicos
 
-**Importante:** À medida que a pesquisa/experimentação avança, os objetivos podem ser ajustados ou refinados. Mantenha essa seção atualizada no repositório para refletir o andamento e as novas decisões do projeto.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Objetivo específico 1:
+Realizar a análise exploratória do dataset para compreender a distribuição das variáveis, identificar possíveis padrões nos dados e verificar a existência de valores ausentes ou inconsistências.
+
+Objetivo específico 2:
+Treinar e comparar diferentes modelos de aprendizado de máquina para prever a presença de doença cardíaca a partir das características disponíveis no dataset.
+
+Objetivo específico 3:
+Analisar quais variáveis apresentam maior influência na previsão do modelo, buscando compreender quais fatores podem estar mais associados à presença da doença.
 
 ## Justificativa
 
-Nesta seção, apresente a importância e a motivação para trabalhar com o conjunto de dados escolhido. Explique por que esse dataset é relevante e como ele se conecta ao problema identificado anteriormente.
+As doenças cardiovasculares representam um dos maiores desafios para os sistemas de saúde em todo o mundo. Segundo dados da Organização Mundial da Saúde, essas doenças são responsáveis por aproximadamente 17,9 milhões de mortes por ano, correspondendo a cerca de 32% de todas as mortes globais. Grande parte desses casos poderia ser evitada por meio da identificação precoce de fatores de risco e da adoção de medidas preventivas.
 
-Indique:
-* Razões para a escolha dos objetivos específicos – Justifique por que decidiu aprofundar sua investigação nessas metas, relacionando-as ao potencial de solução ou melhoria para o problema.
-* Relevância do estudo do problema – Mostre a importância de compreender e tratar a questão apresentada, tanto no contexto acadêmico quanto no profissional.
-* Impacto social, econômico ou ambiental – Descreva como o problema afeta a sociedade ou um setor específico, buscando sempre quantificar o impacto por meio de dados reais.
+Nesse contexto, a análise de dados médicos e a aplicação de técnicas de aprendizado de máquina têm se tornado cada vez mais relevantes para apoiar a tomada de decisão na área da saúde. A capacidade de analisar grandes volumes de dados clínicos e identificar padrões que podem não ser facilmente perceptíveis por métodos tradicionais torna essas técnicas ferramentas promissoras para auxiliar na identificação de riscos e no apoio ao diagnóstico.
 
-**Importante:**
-* Apresente números, estatísticas e informações concretas, citando as fontes (relatórios, artigos científicos, portais oficiais etc.).
-* Mantenha a objetividade e a clareza, evitando argumentos genéricos.
-* Construa um texto coeso que conecte o problema, os objetivos e a relevância do trabalho.
+O dataset Heart Disease, amplamente utilizado em estudos acadêmicos de ciência de dados e aprendizado de máquina, oferece um conjunto de informações clínicas que permite explorar a relação entre diferentes características dos pacientes e a presença de doença cardíaca. A análise desse conjunto de dados possibilita investigar como modelos computacionais podem aprender padrões presentes nos dados e contribuir para a previsão de diagnósticos.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha deste tema se justifica tanto pela relevância do problema no contexto da saúde pública quanto pelo potencial de aplicação de técnicas de mineração de dados e aprendizado de máquina na análise de dados médicos. Além disso, o projeto permite explorar métodos e ferramentas amplamente utilizados na área de ciência de dados, contribuindo para o desenvolvimento de habilidades técnicas e analíticas relacionadas à análise de dados e modelagem preditiva.
 
 ## Público-Alvo
 
-Nesta seção, descreva quem poderá se beneficiar com a sua investigação, apresentando os diferentes perfis de pessoas ou grupos impactados.
+O principal público beneficiado por investigações como esta envolve profissionais e pesquisadores que atuam nas áreas de saúde, ciência de dados e tecnologia aplicada à saúde.
 
-O objetivo aqui não é definir clientes específicos ou papéis exatos dentro da aplicação, mas sim compreender o perfil dos usuários e partes interessadas. Para isso, considere:
-* Conhecimentos prévios relacionados ao domínio do problema e ao uso de tecnologia;
-* Nível de familiaridade com recursos digitais e possíveis barreiras de uso;
-* Contexto profissional e hierárquico, quando aplicável (ex.: nível de decisão, responsabilidades, área de atuação);
-* Necessidades e expectativas que podem ser atendidas pelo projeto.
+Entre os perfis que podem se beneficiar estão:
 
-**Dica:** Seja objetivo e baseie suas descrições em informações reais ou plausíveis para o contexto escolhido. Isso ajudará a manter o foco no desenvolvimento de soluções relevantes e aplicáveis.
+Pesquisadores e estudantes da área de ciência de dados e aprendizado de máquina, interessados em explorar aplicações dessas técnicas em dados médicos e desenvolver modelos capazes de identificar padrões relevantes em conjuntos de dados clínicos.
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Profissionais da área da saúde, como médicos e pesquisadores em cardiologia, que podem se beneficiar de ferramentas de análise de dados capazes de auxiliar na identificação de fatores de risco associados a doenças cardíacas.
+
+Instituições acadêmicas e centros de pesquisa, que utilizam datasets públicos para fins de estudo, experimentação e desenvolvimento de novas metodologias de análise de dados.
+
+Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnologia e análise de dados, mas compartilham o interesse em compreender melhor os fatores relacionados às doenças cardiovasculares e em explorar ferramentas que possam apoiar processos de análise e tomada de decisão baseados em dados.
 
 ## Estado da arte
+<b>Trabalhos Relacionados:</b>
 
-Nesta seção, descreva abordagens da literatura que tratam problemas semelhantes ao seu. Seu objetivo é documentar métodos, dados, métricas e resultados.
+<p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
+<p><b>Problema e contexto:</b> Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
+ 
+<b>Dataset:</b> UCI Heart Disease Dataset.
 
-### O que levantar (mínimo 5 trabalhos)
-Para **cada estudo encontrado** aderente à temática do grupo, registre de forma objetiva:
-* Problema e contexto: que problema o trabalho buscou resolver e em qual domínio/cenário foi aplicado.
-* Dados (dataset): origem, tamanho, período, variáveis/atributos, pré-processamentos relevantes (faltantes, balanceamento, normalização).
-* Abordagem/algoritmos: algoritmos utilizados e parâmetros principais (quando informados).
-* Métricas de avaliação: quais e por quê (ex.: Acurácia, F1, AUC, RMSE, MAE, etc.).
-* Resultados: principais números, comparações internas, limitações citadas e conclusões.
+⦁	Origem: UCI Machine Learning Repository
 
-* Texto-síntese crítico (2–4 parágrafos) respondendo:
-- O que os estudos concordam? Onde divergem?
-- Quais lacunas permanecem (dados, métricas, cenários, limitações técnicas/éticas)?
-- Como seu projeto se alinha aos estudos identificados?
+⦁	Tamanho: 303 registros (subconjunto Cleveland)
 
-**Dica:** Prefira artigos dos últimos 5 anos ou referências clássicas indispensáveis.
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
+
+<b>Variáveis:</b>
+
+⦁	idade
+
+⦁	sexo
+
+⦁	tipo de dor no peito
+
+⦁	pressão arterial
+
+⦁	colesterol
+
+⦁	glicose em jejum
+
+⦁	frequência cardíaca máxima
+
+⦁	angina induzida por exercício
+
+⦁	depressão ST
+
+⦁	entre outras (14 atributos)
+<p><b>Abordagem:</b> Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).</p>
+
+<p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
+
+<b>Resultados:</b>
+
+⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
+
+⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
+
+<p><b>2. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística</b></p>
+
+<b>Problema e contexto:</b> Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
+
+<b>Dataset:</b> UCI Heart Disease Dataset
+
+⦁	Origem: UCI Machine Learning Repository
+
+⦁	Tamanho: 303 registros (subconjunto Cleveland)
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
+
+⦁	Variáveis:
+
+⦁	idade
+
+⦁	sexo
+
+⦁	tipo de dor no peito
+
+⦁	pressão arterial
+
+⦁	colesterol
+
+⦁	glicose em jejum
+
+⦁	frequência cardíaca máxima
+
+⦁	angina induzida por exercício
+
+⦁	depressão ST
+
+⦁	entre outras (14 atributos)
+
+<b>Abordagem:</b>
+
+⦁	Random Forest
+
+⦁	Support Vector Machine (SVM)
+
+⦁	Regressão Logística
+
+<b>Métricas:</b> 
+
+⦁	Accuracy
+
+⦁	Precision
+
+⦁	Recall
+
+⦁	F1-score
+
+<b>Resultados:</b>
+
+⦁	Random Forest: 89,7% accuracy (melhor modelo)
+
+⦁	SVM: 87,0%
+
+⦁	Regressão Logística: 84,2%
+
+<p><b>3. Framework de Machine Learning para Predição de Doença Cardíaca</b></p>
+ 
+<b>Problema e contexto:</b> Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
+
+<b>Dataset:</b> Heart Disease.
+
+⦁	Origem: UCI Machine Learning Repository
+
+⦁	Tamanho: 303 pacientes
+
+⦁	Variáveis: 13 variáveis clínicas + variável alvo
+
+⦁	Atributos principais: idade, colesterol, pressão arterial, tipo de dor torácica, frequência cardíaca máxima, etc.
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
+
+<b>Abordagem:</b> 
+
+⦁	Random Forest
+
+⦁	KNN
+
+⦁	Regressão Logística
+
+⦁	Otimização com GridSearchCV e RandomizedSearchCV
+
+<b>Métricas:</b>
+
+⦁	Accuracy
+
+⦁	Precision
+
+⦁	Recall
+
+⦁	F1-score
+
+⦁	Confusion matrix
+
+<b>Resultados:</b> 
+
+⦁	Random Forest: 91% accuracy
+
+⦁	F1-score: 0,89
+
+⦁	Limitação: tamanho reduzido do dataset e baixa generalização.
+
+<p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
+   
+<b>Problema e contexto:</b> Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
+
+<b>Dataset:</b> 
+
+⦁	Combinação de datasets médicos: Cleveland, Hungary, Switzerland, Statlog
+
+⦁	Variáveis: frequência cardíaca máxima, colesterol, dor no peito, glicemia etc.
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
+
+<b>Abordagem:</b> 
+
+⦁	Stacking ensemble
+
+⦁	Random Forest
+
+⦁	XGBoost
+
+⦁	Extra Trees
+
+<b>Métricas:</b> 
+
+⦁	Accuracy
+
+⦁	ROC-AUC
+
+⦁	F1-score
+
+⦁	Sensitivity e Specificity
+
+<b>Resultados:</b> 
+
+⦁	Accuracy: 92,34%
+
+⦁	Melhor desempenho que modelos individuais.
+
+<p><b>5. Predição de Doença Cardíaca com Dataset Integrado</b></p>
+   
+<b>Problema e contexto:</b> Prever doenças cardíacas combinando dados de múltiplos hospitais.
+
+<b>Dataset:</b> 
+
+⦁	Cleveland
+
+⦁	Hungary
+
+⦁	Switzerland
+
+⦁	Long Beach VA
+
+⦁	~11 variáveis clínicas
+
+⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024.
+
+<b>Abordagem:</b>
+
+⦁	Random Forest
+
+⦁	SVM
+
+⦁	Logistic Regression
+
+<b>Métricas:</b> 
+
+⦁	Accuracy
+
+⦁	Precision
+
+⦁	Recall
+
+<b>Resultados:</b> 
+
+⦁	Random Forest: 92,9% accuracy
+
+⦁	SVM: 89,7%
+
+⦁	Logistic Regression: 86,1%
+
+
+<b>Síntese Crítica</b>
+
+<p>Após a análise dos projetos, observou-se que eles buscam prever doenças cardiovasculares por meio da utilização de técnicas de aprendizagem de máquina, possibilitando a avaliação do risco dessas doenças em tempo real. Em geral, os estudos apresentam abordagens semelhantes, utilizando algoritmos de aprendizagem supervisionada, como Random Forest, Regressão Logística e SVM, além de métricas de avaliação comuns, como accuracy, precision, recall e F1-score. Entretanto, diferem quanto aos dados utilizados, já que alguns trabalhos utilizam o subconjunto Cleveland, enquanto outros empregam diferentes conjuntos de dados, como Hungary, Statlog ou Long Beach VA.</p>
+
+<p>Em relação às lacunas identificadas, destaca-se que muitos estudos trabalham com conjuntos de dados relativamente pequenos, o que pode limitar a generalização dos resultados. Além disso, raramente são discutidas questões éticas e possíveis vieses, como desigualdades relacionadas a sexo, idade ou características populacionais, aspectos importantes para garantir maior confiabilidade e equidade nos modelos desenvolvidos.</p>
+
+<p>O projeto em desenvolvimento também tem como objetivo a previsão de doenças cardíacas, porém pretende explorar o potencial do Cardiovascular Disease Dataset (Cardio Train) para validar modelos em cenários hospitalares e acadêmicos, contribuindo para a detecção preventiva de doenças cardiovasculares e ampliando as possibilidades de aplicação dessas soluções na área da saúde.</p>
 
 ### Ferramentas inteligentes permitidas
 Você pode utilizar: Perplexity, SciSpace, Elicit, Research Rabbit, Litmaps.
@@ -181,17 +394,28 @@ O conjunto de dados não apresenta valores ausentes explícitos nas colunas. Tod
 
 <img width="1143" height="272" alt="image" src="https://github.com/user-attachments/assets/11f4d523-03cb-4b5c-9f18-045f5c7f2b9a" />
 
+---
 
+Nesta seção, apresente uma visão clara e objetiva do dataset selecionado, incluindo:
+* Identificação e origem – Nome, link de acesso, fonte (instituição, repositório, API etc.) e licença de uso.
+* Visão geral – Total de registros e atributos, período coberto e breve contextualização.
+* Atributos – Tabela com nome, descrição, tipo, unidade de medida (se aplicável) e exemplos de valores.
+* Qualidade dos dados – Presença de valores faltantes, inconsistências, duplicatas ou outliers.
+
+**Dica:** Seja objetivo, mas inclua detalhes suficientes para que outra pessoa possa entender e reutilizar o conjunto de dados sem buscar informações extras.
+
+--- 
 # Canvas analítico
 
-Nesta seção, você deverá estruturar e preencher o seu Canvas Analítico, que tem como objetivo registrar a organização das ideias e apresentar o modelo de negócio do projeto.
+Nesta seção é apresentado o **Canvas Analítico** do projeto, uma ferramenta utilizada para estruturar e organizar as principais dimensões da análise de dados a ser realizada. O canvas auxilia na definição do problema investigado, das fontes de dados utilizadas, das hipóteses consideradas, das etapas de implementação da análise e das formas de validação dos resultados.
 
-O Canvas deve ser preenchido integralmente, mesmo que algumas informações ainda não estejam totalmente definidas. Nessa etapa inicial, é aceitável trabalhar com hipóteses ou estimativas, desde que sejam coerentes com o problema e o contexto definidos.
+O objetivo desse artefato é proporcionar uma visão clara e estruturada do projeto, permitindo alinhar os objetivos analíticos, as decisões metodológicas e os resultados esperados ao longo do desenvolvimento do trabalho.
 
-**Dica:** O Canvas Analítico serve como guia visual para alinhar expectativas e direcionar o desenvolvimento. Ele poderá (e deverá) ser revisitado e atualizado ao longo do projeto.
+Nesta etapa inicial do projeto, algumas informações ainda podem estar baseadas em hipóteses ou estimativas preliminares. Entretanto, todas as seções do canvas foram preenchidas de forma coerente com o problema proposto e com o contexto de análise relacionado ***à predição de doença cardiovascular utilizando técnicas de aprendizado de máquina***.
 
-> **Links Úteis**:
-> - [Modelo do Canvas Analítico](https://github.com/ICEI-PUC-Minas-PMV-SI/PesquisaExperimentacao-Template/blob/main/help/Software-Analtics-Canvas-v1.0.pdf)
+O Canvas Analítico desenvolvido para o projeto é apresentado a seguir.
+
+![Doença Cárdiovascular](img/custom/canvas_analitico_doenca_cardiovascular_70k.png)
 
 # Vídeo de apresentação da Etapa 01
 
@@ -203,3 +427,5 @@ Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvo
 
 > **Links Úteis**:
 > - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
+> - [Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset?resource=download)
+> - [Organização Mundial da Saúde](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
