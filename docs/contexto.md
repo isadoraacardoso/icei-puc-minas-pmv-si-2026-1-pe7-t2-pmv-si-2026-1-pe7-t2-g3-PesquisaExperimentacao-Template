@@ -415,7 +415,7 @@ Nesta etapa inicial do projeto, algumas informações ainda podem estar baseadas
 
 O Canvas Analítico desenvolvido para o projeto é apresentado a seguir.
 
-![Doença Cárdiovascular](img/custom/canvas_analitico_doenca_cardiovascular_70k.png)
+<img width="3780" height="2670" alt="canvas_analitico_doenca_cardiovascular_70k" src="https://github.com/user-attachments/assets/184c16d1-dbfa-4f44-a707-c8333fd57e38" />
 
 # Vídeo de apresentação da Etapa 01
 
