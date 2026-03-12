@@ -407,9 +407,5 @@ O Canvas Analítico desenvolvido para o projeto é apresentado a seguir.
 
 # Referências
 
-Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho utilizando o padrão ABNT.
-
-> **Links Úteis**:
-> - [Padrão ABNT PUC Minas](https://portal.pucminas.br/biblioteca/index_padrao.php?pagina=5886)
-> - [Dataset](https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset?resource=download)
-> - [Organização Mundial da Saúde](https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds))
+> - Cardiovascular Disease dataset. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset?resource=download. Acesso em 07 mar. 2026.
+> - Cardiovascular diseases (CVDs). Disponível em: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds). Acesso em 06 mar. 2026.
