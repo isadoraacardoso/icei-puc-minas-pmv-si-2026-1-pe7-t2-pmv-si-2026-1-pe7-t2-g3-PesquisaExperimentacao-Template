@@ -401,6 +401,21 @@ O Canvas Analítico desenvolvido para o projeto é apresentado a seguir.
 
 <img width="3780" height="2670" alt="canvas_analitico_doenca_cardiovascular_70k" src="https://github.com/user-attachments/assets/184c16d1-dbfa-4f44-a707-c8333fd57e38" />
 
+# Considerações Éticas e Conformidade com a LGPD
+
+Este projeto utiliza um conjunto de dados público relacionado à saúde cardiovascular para fins de análise e experimentação com técnicas de aprendizado de máquina. Apesar de os dados utilizados estarem disponíveis publicamente e não conterem identificadores diretos de pacientes, é fundamental considerar aspectos éticos e legais associados ao tratamento de informações de saúde, especialmente à luz da **Lei Geral de Proteção de Dados Pessoais (LGPD) (Lei nº 13.709/2018)**.
+
+Dados relacionados à saúde são considerados **dados pessoais sensíveis**, pois podem revelar informações íntimas sobre a condição física ou médica de um indivíduo. Mesmo quando os dados são disponibilizados em formato aberto, o uso responsável exige cuidados adicionais, principalmente no que diz respeito à **anonimização e à impossibilidade de reidentificação** dos indivíduos. Neste projeto, o dataset utilizado já se encontra previamente anonimizado, sem informações como nome, endereço, documento ou qualquer identificador direto que permita associar os registros a pessoas específicas.
+
+Outro ponto relevante refere-se à **sensibilidade das variáveis utilizadas**, como idade, sexo, pressão arterial, colesterol e hábitos relacionados ao estilo de vida. Embora essas variáveis sejam importantes para análises epidemiológicas e para o desenvolvimento de modelos preditivos, elas também podem gerar interpretações equivocadas se utilizadas sem o devido contexto médico ou científico. Por esse motivo, os resultados produzidos neste projeto devem ser entendidos exclusivamente como **análises experimentais no contexto acadêmico**, não devendo ser utilizados para diagnóstico, decisão clínica ou qualquer aplicação direta na prática médica.
+
+Também é importante considerar o **risco de vieses nos modelos de aprendizado de máquina**. Algoritmos treinados com dados históricos podem reproduzir ou amplificar padrões presentes no dataset, incluindo possíveis desigualdades associadas a fatores como sexo, idade ou estilo de vida. Caso o conjunto de dados não represente adequadamente diferentes grupos populacionais, o modelo pode apresentar desempenho desigual entre essas populações, gerando previsões menos confiáveis para determinados grupos.
+
+Além disso, modelos preditivos em saúde apresentam **limitações inerentes**, uma vez que trabalham com probabilidades e padrões estatísticos, não com diagnóstico clínico individual. A interpretação de resultados deve ser feita com cautela, considerando que decisões médicas envolvem múltiplos fatores, incluindo avaliação clínica, histórico do paciente e análise por profissionais especializados.
+
+Dessa forma, este projeto adota uma postura de **responsabilidade ética no uso de dados**, reconhecendo as limitações da abordagem computacional e reforçando que os resultados obtidos têm finalidade exclusivamente educacional e exploratória. O objetivo é contribuir para o aprendizado sobre análise de dados e inteligência artificial aplicada à saúde, respeitando os princípios de privacidade, transparência e uso responsável das informações.
+
+
 # Vídeo de apresentação da Etapa 01
 
 [Vídeo de apresentação da Etapa 01](https://sgapucminasbr.sharepoint.com/sites/team_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30/_layouts/15/stream.aspx?id=%2Fsites%2Fteam_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30%2FDocumentos+Compartilhados%2FGrupo+3+-+Quarta+-+20h30%2FGrava%C3%A7%C3%B5es%2FVideo+etapa+1+do+Projeto.mp4&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.28af21fc-c3f2-4ecb-a2a3-099b885fe2d8)
