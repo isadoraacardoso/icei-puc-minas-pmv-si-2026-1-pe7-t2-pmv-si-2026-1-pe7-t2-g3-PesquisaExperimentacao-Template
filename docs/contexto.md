@@ -399,7 +399,7 @@ Nesta etapa inicial do projeto, algumas informações ainda podem estar baseadas
 
 O Canvas Analítico desenvolvido para o projeto é apresentado a seguir.
 
-<img width="3780" height="2670" alt="canvas_analitico_doenca_cardiovascular_70k" src="https://github.com/user-attachments/assets/184c16d1-dbfa-4f44-a707-c8333fd57e38" />
+![WhatsApp Image 2026-03-12 at 16 58 08](https://github.com/user-attachments/assets/77e30fb4-08ac-4b68-8bf7-3f72c2c269ea)
 
 # Considerações Éticas e Conformidade com a LGPD
 
