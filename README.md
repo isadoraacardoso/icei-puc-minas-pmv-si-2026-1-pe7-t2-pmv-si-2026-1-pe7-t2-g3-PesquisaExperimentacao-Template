@@ -1,4 +1,4 @@
-# PREDIÇÃO DE DOENÇAS CARDÍACAS
+# PREDIÇÃO DE DOENÇAS CARDIOVASCULARES
 
 `CURSO: Sistemas de Informação`
 
