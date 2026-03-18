@@ -417,7 +417,7 @@ Dessa forma, este projeto adota uma postura de **responsabilidade ética no uso 
 
 # Vídeo de apresentação da Etapa 01
 
-[Vídeo de apresentação da Etapa 01](https://sgapucminasbr.sharepoint.com/sites/team_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30/_layouts/15/stream.aspx?id=%2Fsites%2Fteam_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30%2FDocumentos+Compartilhados%2FGrupo+3+-+Quarta+-+20h30%2FGrava%C3%A7%C3%B5es%2FVideo+etapa+1+do+Projeto.mp4&referrer=StreamWebApp.Web&referrerScenario=AddressBarCopied.view.28af21fc-c3f2-4ecb-a2a3-099b885fe2d8)
+[Vídeo de apresentação da Etapa 01](https://sgapucminasbr.sharepoint.com/sites/team_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30/_layouts/15/stream.aspx?id=%2Fsites%2Fteam%5Fsga%5F2414%5F2026%5F1%5F2291102%2DGrupo3%2DQuarta%2D20h30%2FDocumentos%20Compartilhados%2FGrupo%203%20%2D%20Quarta%20%2D%2020h30%2FGrava%C3%A7%C3%B5es%2FVideo%20Project%201%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E3e108e79%2D4c08%2D4f02%2Da271%2D82d131ad3c6a)
 
 # Referências
 
