@@ -76,38 +76,34 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ## Estado da arte
 <b>Trabalhos Relacionados:</b>
 
-<p><b>1.Heart‑Disease‑Prediction(abhinavsaurabh)</b></p>
-<p><b>Problema e contexto:</b> Um projeto de análise preditiva com o objetivo de identificar a probabilidade de doenças cardíacas com base em dados de pacientes, utilizando técnicas de aprendizado de máquina</p>
+<p><b>1.PREDIÇÃO DE DOENÇA CARDÍACA E IDENTIFICAÇÃO DE FATORES DE RISCO COM TÉCNICAS ESTATÍSTICAS E DE MACHINE LEARNING </b></p>
+<p><b>Problema e contexto:</b> Construir um modelo capaz de prever a presença de doença cardíaca e identificar os principais fatores de risco associados, utilizando técnicas estatísticas e de aprendizado de máquina. </p>
  
-<b>Dataset:</b> UCI Heart Disease Dataset.
-
-⦁	Origem: UCI Machine Learning Repository
-
-⦁	Tamanho: 303 registros (subconjunto Cleveland)
-
-⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
+<b>Dataset:</b>Os dados utilizados neste estudo provêm da Pesquisa Nacional de Saúde (PNS)1 de 2019, realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde.
+⦁	Período: 2025
 
 <b>Variáveis:</b>
 
-⦁	idade
+Variáveis sociodemográficas
 
-⦁	sexo
+• C006 - Sexo: sexo do participante (masculino/feminino);
 
-⦁	tipo de dor no peito
+• C008 - Idade: idade do morador na data de referência;
 
-⦁	pressão arterial
+• C009 - Cor ou raça: categorizada em branca, preta, parda, amarela, indígena ou ignorado.
 
-⦁	colesterol
+Variáveis sobre dor torácica
 
-⦁	glicose em jejum
+• N004, N005, N008: presença de dor ou desconforto no peito ao realizar esforços físicos e
+localização da dor.
 
-⦁	frequência cardíaca máxima
+Variáveis de sono e antropometria
 
-⦁	angina induzida por exercício
+• N010 - Problemas de sono: frequência de dificuldades para dormir ou manter o sono,
+transformada em variável dicotômica para análise;
 
-⦁	depressão ST
-
-⦁	entre outras (14 atributos)
+• P00104 - Peso (kg) e P00404 - Altura (cm): utilizados para cálculo do índice de massa
+corporal (IMC).
 <p><b>Abordagem:</b> Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).</p>
 
 <p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
@@ -117,6 +113,8 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 ⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
 
 ⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
+
+https://ri.ufs.br/jspui/handle/riufs/23726
 
 <p><b>2. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística</b></p>
 
