@@ -201,7 +201,7 @@ Tamanho: Tamanho: ~21 mil ECGs.
 
 <b>Abordagem:</b> 
 
-	Random Forest,	Regressão Logística e SVM
+<p>Random Forest, Regressão Logistica e SVM</p>
 
 <b>Métricas:</b>
 
