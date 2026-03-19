@@ -124,66 +124,56 @@ corporal (IMC).
 
 https://ri.ufs.br/jspui/handle/riufs/23726
 
-<p><b>2. Predição de Doença Cardíaca com Random Forest, SVM e Regressão Logística</b></p>
+<p><b>2. Uso da Inteligência Artificial Explicável aplicada à predição
+de doenças cardíacas</b></p>
 
-<b>Problema e contexto:</b> Desenvolver modelos de ML para prever a presença de doença cardíaca usando dados clínicos de pacientes.
+<b>Problema e contexto:</b> As doenças cardiovasculares são uma das principais causas de morte no mundo e no Brasil.Há grande necessidade de:
+diagnóstico precoce, prevenção e apoio à decisão médica
 
-<b>Dataset:</b> UCI Heart Disease Dataset
+<b>Dataset:</b> 
 
-⦁	Origem: UCI Machine Learning Repository
+Origem: Kaggle (dados combinados do UCI)
+Bases utilizadas: Cleveland, Hungarian, Switzerland, Long Beach VA e Stalog (Heart).
 
-⦁	Tamanho: 303 registros (subconjunto Cleveland)
+Tamanho: 918 registros, 12 variáveis.
 
-⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024
+Período: 2024.
 
-⦁	Variáveis:
+Variáveis: clínicas (idade, colesterol, ECG, etc.) + alvo (doença cardíaca).
 
-⦁	idade
+Pré-processamento:
 
-⦁	sexo
+sem dados faltantes.
 
-⦁	tipo de dor no peito
+encoding de categóricas.
 
-⦁	pressão arterial
+balanceamento com SMOTE.
 
-⦁	colesterol
+normalização (StandardScaler).
 
-⦁	glicose em jejum
-
-⦁	frequência cardíaca máxima
-
-⦁	angina induzida por exercício
-
-⦁	depressão ST
-
-⦁	entre outras (14 atributos)
+divisão treino/teste (80/20).
 
 <b>Abordagem:</b>
 
-⦁	Random Forest
-
-⦁	Support Vector Machine (SVM)
-
-⦁	Regressão Logística
+Comparação entre 5 modelos de classificação: Logistic Regression, KNN, MLP, Random Forest e XGBoost.
 
 <b>Métricas:</b> 
 
-⦁	Accuracy
-
-⦁	Precision
-
-⦁	Recall
-
-⦁	F1-score
+Acurácia, Precisão, Recall, F1-score e Matriz de confusão.
 
 <b>Resultados:</b>
 
-⦁	Random Forest: 89,7% accuracy (melhor modelo)
+<b>Random Forest:</b> 
 
-⦁	SVM: 87,0%
+Acurácia: 90%, Precisão: 92,30%, Recall: 89,71% e F1-score: 90,99%.
 
-⦁	Regressão Logística: 84,2%
+<b>XGBoost:</b>
 
+Acurácia: 87%, Precisão: 91,08%, Recall: 85,98% e F1-score: 88,46%.
+
+ <p>Os Modelos: 
+ Logistic Regression, KNN e  MLP apresentaram resultados inferiores ao Random Forest e XGBoost.</p>
+ 
 <p><b>3. Framework de Machine Learning para Predição de Doença Cardíaca</b></p>
  
 <b>Problema e contexto:</b> Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
