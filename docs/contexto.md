@@ -132,8 +132,9 @@ diagnóstico precoce, prevenção e apoio à decisão médica
 
 <b>Dataset:</b> 
 
-Origem: Kaggle (dados combinados do UCI)
-Bases utilizadas: Cleveland, Hungarian, Switzerland, Long Beach VA e Stalog (Heart).
+Origem: Kaggle (dados combinados do UCI).
+
+<b>Bases utilizadas:</b> Cleveland, Hungarian, Switzerland, Long Beach VA e Stalog (Heart).
 
 Tamanho: 918 registros, 12 variáveis.
 
