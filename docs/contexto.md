@@ -80,6 +80,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 <p><b>Problema e contexto:</b> Construir um modelo capaz de prever a presença de doença cardíaca e identificar os principais fatores de risco associados, utilizando técnicas estatísticas e de aprendizado de máquina. </p>
  
 <b>Dataset:</b>Os dados utilizados neste estudo provêm da Pesquisa Nacional de Saúde (PNS)1 de 2019, realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde.
+
 ⦁	Período: 2025
 
 <b>Variáveis:</b>
