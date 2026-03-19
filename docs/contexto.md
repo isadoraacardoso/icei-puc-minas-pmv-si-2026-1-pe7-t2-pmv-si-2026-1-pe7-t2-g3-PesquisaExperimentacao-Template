@@ -175,15 +175,25 @@ Acurácia: 87%, Precisão: 91,08%, Recall: 85,98% e F1-score: 88,46%.
  <p>Os Modelos: 
  Logistic Regression, KNN e  MLP apresentaram resultados inferiores ao Random Forest e XGBoost.</p>
  https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Intelig%c3%aancia%20Artificial%20Explic%c3%a1vel%20aplicada%20%c3%a0%20predi%c3%a7%c3%a3o%20de%20doen%c3%a7as%20card%c3%adacas.pdf?sequence=1&isAllowed=y
-<p><b>3. Framework de Machine Learning para Predição de Doença Cardíaca</b></p>
+
  
-<b>Problema e contexto:</b> Criar um sistema de apoio ao diagnóstico clínico para prever doenças cardíacas.
+<p><b>3.MACHINE LEARNING PARA CLASSIFICAÇÃO DE PROBLEMAS
+CARDÍACOS:
+Proposta de uma aplicação</b></p>
+ 
+<b>Problema e contexto:</b> O problema central abordado neste estudo é a dificuldade de classificar
+de maneira precisa o risco de doenças cardíacas em indivíduos assintomáticos.
 
-<b>Dataset:</b> Heart Disease.
+<b>Dataset:</b> 
 
-⦁	Origem: UCI Machine Learning Repository
+Cleveland, Hungary, Switzerland, and the VA, Long Beach, Statlog Heart, Framingham heart study,
+Sani Z-Alizadeh dataset, MIT-BIH Arrhythmia Dataset, Sleep Heart Health Study, South African Hearth dataset e
+Villa Scassi Cardiology Ward
 
-⦁	Tamanho: 303 pacientes
+	Origem: Heart Disease Dataset do UCI Machine Learning Repository, Long Beach do UCI Machine Learning Repository, 
+Dataset do projeto StatLog Project (Europa)
+
+⦁	Tamanho: 121.000 instâncias dos datasets somados.
 
 ⦁	Variáveis: 13 variáveis clínicas + variável alvo
 
