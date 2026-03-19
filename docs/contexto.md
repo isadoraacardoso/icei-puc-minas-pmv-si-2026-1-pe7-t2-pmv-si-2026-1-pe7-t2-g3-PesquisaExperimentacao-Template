@@ -216,43 +216,64 @@ acurácia, precisão, recall e F1-score
 
 https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source
 
-<p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
+<p><b>4. CLASSIFICAÇÃO DE DOENÇAS CARDIOVASCULARES
+UTILIZANDO APRENDIZADO DE MÁQUINA</b></p>
    
-<b>Problema e contexto:</b> Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
+<b>Problema e contexto:</b> A doença cardiovascular (DCV) é a principal causa de morte no Brasil e mundialmente para homens e mulheres, caracterizando-se por ser muitas vezes silenciosa, ou seja, não apresentar sintomas claros até causar complicações graves.
 
-<b>Dataset:</b> 
+O crescimento exponencial de dados em diversas áreas, incluindo saúde, demanda técnicas de análise avançadas. A Inteligência Artificial (IA) e o Aprendizado de Máquina (ML) surgem como ferramentas capazes de analisar padrões complexos em dados e auxiliar na tomada de decisão médica.
 
-⦁	Combinação de datasets médicos: Cleveland, Hungary, Switzerland, Statlog
+<b>Dataset:</b> heart.csv.
 
-⦁	Variáveis: frequência cardíaca máxima, colesterol, dor no peito, glicemia etc.
+Origem: Público, disponível no Kaggle.
+https://www.kaggle.com/datasets/volodymyrgavrysh/heart-disease
 
-⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
+Tamanho:
+
+Número de pacientes: 1.025
+
+526 pacientes com doença cardiovascular
+
+499 pacientes sem doença cardiovascular
+
+Número de atributos/características: 13
+
+Variáveis: Idade, Sexo, Tipo de dor no peito (cp), Pressão arterial em repouso (trestbps), Colesterol, Glicemia em jejum, 
+
+Resultados do eletrocardiograma em repouso (restecg), Frequência cardíaca máxima alcançada (thalach), Angina induzida por exercício (exang),
+
+Depressão do segmento ST induzida por exercício em relação ao repouso (oldpeak), Inclinação do segmento ST no pico de exercício (slope)
+
+Número de vasos principais coloridos por fluoroscopia (ca), Talassemia (thal)
+
+Classe alvo:
+
+0 = paciente saudável
+
+1 = paciente com doença cardiovascular
+
+	Período: 2023.
 
 <b>Abordagem:</b> 
 
-⦁	Stacking ensemble
-
-⦁	Random Forest
-
-⦁	XGBoost
-
-⦁	Extra Trees
+K-Nearest Neighbor (KNN), Árvore de Decisão, Rede Neural Multicamadas Perceptron (MLP).
 
 <b>Métricas:</b> 
 
-⦁	Accuracy
-
-⦁	ROC-AUC
-
-⦁	F1-score
-
-⦁	Sensitivity e Specificity
+Precision, Recall, F1-Score e Support
 
 <b>Resultados:</b> 
 
-⦁	Accuracy: 92,34%
+| Algoritmo             | Classe | Precision | Recall | F1-score | Support |
+| --------------------- | ------ | --------- | ------ | -------- | ------- |
+| **KNN**               | 0      | 0,90      | 0,92   | 0,89     | 170     |
+|                       | 1      | 0,91      | 0,91   | 0,88     | 172     |
+| **Árvore de Decisão** | 0      | 0,97      | 0,98   | 0,97     | 170     |
+|                       | 1      | 0,98      | 0,97   | 0,97     | 172     |
+| **Rede MLP**          | 0      | 0,88      | 0,73   | 0,80     | 170     |
+|                       | 1      | 0,77      | 0,90   | 0,83     | 172     |
 
-⦁	Melhor desempenho que modelos individuais.
+https://revista.faculdadeitop.edu.br/index.php/revista/article/view/563
 
 <p><b>5. Predição de Doença Cardíaca com Dataset Integrado</b></p>
    
