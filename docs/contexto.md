@@ -419,7 +419,11 @@ Dessa forma, este projeto adota uma postura de **responsabilidade ética no uso 
 
 # Referências
 
- - Cardiovascular Disease dataset. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset?resource=download . Acesso em 07 mar. 2026.
- - WORLD HEALTH ORGANIZATION. Cardiovascular diseases (CVDs). Disponível em: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds) . Acesso em 06 mar. 2026.
- - WORLD HEALTH ORGANIZATION. Ethics and governance of artificial intelligence for health. Geneva: WHO, 2021. Disponível em: https://www.who.int/publications/i/item/9789240029200 . Acesso em: 12 mar. 2026.
- - BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Dispõe sobre a proteção de dados pessoais e altera a Lei nº 12.965, de 23 de abril de 2014 (Marco Civil da Internet). Brasília, DF: Presidência da República, 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm . Acesso em: 12 mar. 2026.
+- BRASIL. Lei nº 13.709, de 14 de agosto de 2018. Lei Geral de Proteção de Dados Pessoais (LGPD). Brasília, DF: Presidência da República, 2018. Disponível em: https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2018/lei/l13709.htm
+. Acesso em: 12 mar. 2026.
+- SULIANOVA, Svetlana. Cardiovascular Disease dataset. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset
+. Acesso em: 7 mar. 2026.
+- WORLD HEALTH ORGANIZATION. Cardiovascular diseases (CVDs). Geneva: World Health Organization, 2025. Disponível em: https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds)
+. Acesso em: 6 mar. 2026.
+- WORLD HEALTH ORGANIZATION. Ethics and governance of artificial intelligence for health. Geneva: World Health Organization, 2021. Disponível em: https://www.who.int/publications/i/item/9789240029200
+. Acesso em: 12 mar. 2026.
