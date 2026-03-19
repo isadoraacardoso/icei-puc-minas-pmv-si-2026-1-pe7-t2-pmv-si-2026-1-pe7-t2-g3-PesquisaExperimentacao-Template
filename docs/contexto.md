@@ -177,30 +177,25 @@ Acurácia: 87%, Precisão: 91,08%, Recall: 85,98% e F1-score: 88,46%.
  https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Intelig%c3%aancia%20Artificial%20Explic%c3%a1vel%20aplicada%20%c3%a0%20predi%c3%a7%c3%a3o%20de%20doen%c3%a7as%20card%c3%adacas.pdf?sequence=1&isAllowed=y
 
  
-<p><b>3.MACHINE LEARNING PARA CLASSIFICAÇÃO DE PROBLEMAS
-CARDÍACOS:
-Proposta de uma aplicação</b></p>
+<p><b>3.Aprendizado de Máquina para Predicão de Diagnósticos de
+Doencas Cardiovasculares</b></p>
  
-<b>Problema e contexto:</b> O problema central abordado neste estudo é a dificuldade de classificar
-de maneira precisa o risco de doenças cardíacas em indivíduos assintomáticos.
+<b>Problema e contexto:</b>A predição de DCV é um dos desafios mais complicados na área de análise de dados clínicos.
+Contudo, a classificação usando ML desempenha um papel significativo na previsão de doenças cardíacas e na investigação de dados, para diminuir os impactos no coração e evitar uma possível morte prematura.”
 
-<b>Dataset:</b> 
+<b>Dataset:</b> PTB-XL (Physikalisch-Technische Bundesanstalt)
 
-Cleveland, Hungary, Switzerland, and the VA, Long Beach, Statlog Heart, Framingham heart study,
-Sani Z-Alizadeh dataset, MIT-BIH Arrhythmia Dataset, Sleep Heart Health Study, South African Hearth dataset e
-Villa Scassi Cardiology Ward
+Origem: Instituto nacional de metrologia da Alemanha (PTB)
 
-	Origem: Heart Disease Dataset do UCI Machine Learning Repository, Long Beach do UCI Machine Learning Repository, 
-Dataset do projeto StatLog Project (Europa)
+Tamanho: Tamanho: ~21 mil ECGs.
+ 
+Tipo	                Variáveis
+Sinais ECG	            12 derivações por 10 segundos (séries temporais)
+Metadados do paciente	Idade, sexo, dispositivo, responsável pelo exame
+Diagnósticos	        5 superclasses, 23 subclasses, 44 diagnósticos (hierárquicos)
+Rótulos	                Multi-hot encoding de diagnósticos (uma amostra pode ter múltiplos)
 
-⦁	Tamanho: 121.000 instâncias dos datasets somados.
-
-⦁	Variáveis: 13 variáveis clínicas + variável alvo
-
-⦁	Atributos principais: idade, colesterol, pressão arterial, tipo de dor torácica, frequência cardíaca máxima, etc.
-
-⦁	Período: estudos clínicos analisados em pesquisas recentes até 2025.
-
+Periodo: 2022
 <b>Abordagem:</b> 
 
 ⦁	Random Forest
@@ -230,7 +225,7 @@ Dataset do projeto StatLog Project (Europa)
 ⦁	F1-score: 0,89
 
 ⦁	Limitação: tamanho reduzido do dataset e baixa generalização.
-
+https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source=chatgpt.com
 <p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
    
 <b>Problema e contexto:</b> Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
