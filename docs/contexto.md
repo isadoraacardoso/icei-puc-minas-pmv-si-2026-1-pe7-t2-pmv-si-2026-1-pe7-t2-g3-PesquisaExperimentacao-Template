@@ -104,15 +104,18 @@ transformada em variável dicotômica para análise;
 
 • P00104 - Peso (kg) e P00404 - Altura (cm): utilizados para cálculo do índice de massa
 corporal (IMC).
-<p><b>Abordagem:</b> Implementação de múltiplos algoritmos de aprendizado de máquina, incluindo Regressão Logística, Random Forest e Máquinas de Vetores de Suporte (SVM).</p>
+<p><b>Abordagem:</b> Regressão Logística, K-Nearest Neighbors e Random Forest</p>
 
 <p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
 
 <b>Resultados:</b>
 
-⦁	Melhor modelo: O Random Forest alcançou uma precisão de 92%, superando os demais modelos.
+<img width="618" height="188" alt="image" src="https://github.com/user-attachments/assets/68c2b86d-bd16-445e-a1d4-8d7191620ce2" />
 
-⦁	Principais fatores preditivos: Idade, nível de colesterol e frequência cardíaca máxima foram identificados como fatores preditivos significativos.
+<img width="618" height="185" alt="image" src="https://github.com/user-attachments/assets/ee2541ff-d42e-44d3-90b6-a86a45c23c2b" />
+
+
+
 
 https://ri.ufs.br/jspui/handle/riufs/23726
 
