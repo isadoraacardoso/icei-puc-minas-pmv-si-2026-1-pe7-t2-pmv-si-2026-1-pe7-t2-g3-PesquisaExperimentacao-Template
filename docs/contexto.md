@@ -189,15 +189,13 @@ Origem: Instituto nacional de metrologia da Alemanha (PTB)
 
 Tamanho: Tamanho: ~21 mil ECGs.
  
-Tipo	                  Variáveis
+| **Tipo**                  | **Variáveis**                                                         |
+| ------------------------- | -------------------------------------------------------------------------------- |
+| **Sinais**                | ECG 12 derivações, duração 10 segundos (séries temporais)                        |
+| **Metadados do paciente** | Idade, sexo, dispositivo, responsável pelo exame                                 |
+| **Diagnósticos**          | 5 superclasses, 23 subclasses, 44 diagnósticos (hierárquicos)                    |
+| **Rótulos**               | Multi-hot encoding de diagnósticos (uma amostra pode ter múltiplos diagnósticos) |
 
-Sinais ECG	            12 derivações por 10 segundos (séries temporais)
-
-Metadados do paciente	 Idade, sexo, dispositivo, responsável pelo exame
-
-Diagnósticos	          5 superclasses, 23 subclasses, 44 diagnósticos (hierárquicos)
-
-Rótulos	               Multi-hot encoding de diagnósticos (uma amostra pode ter múltiplos)
 
 <b>Periodo:</b> 2022
 
