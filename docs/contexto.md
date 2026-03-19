@@ -106,7 +106,7 @@ transformada em variável dicotômica para análise;
 corporal (IMC).
 <p><b>Abordagem:</b> Regressão Logística, K-Nearest Neighbors e Random Forest</p>
 
-<p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, recall e pontuação ROC-AUC</p>
+<p><b>Métricas:</b> Comparação de desempenho usando acurácia, precisão, F1-score, suporte, recall e pontuação ROC-AUC</p>
 
 <b>Resultados:</b>
 
