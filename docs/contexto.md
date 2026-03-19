@@ -214,7 +214,7 @@ acurácia, precisão, recall e F1-score
 | SVM (Máquina de Vetores de Suporte) | 85%      | 0,84     | 0,83   | 0,835    |
 | Regressão Logística                 | 82%      | 0,81     | 0,80   | 0,805    |
 
-https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source=chatgpt.com
+https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source
 
 <p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
    
