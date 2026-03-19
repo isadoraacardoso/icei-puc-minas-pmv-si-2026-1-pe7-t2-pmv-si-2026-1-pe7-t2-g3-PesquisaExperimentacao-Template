@@ -252,7 +252,7 @@ Classe alvo:
 
 1 = paciente com doença cardiovascular
 
-	Período: 2023.
+<p><b>Periodo:</b></p> 2023.
 
 <b>Abordagem:</b> 
 
