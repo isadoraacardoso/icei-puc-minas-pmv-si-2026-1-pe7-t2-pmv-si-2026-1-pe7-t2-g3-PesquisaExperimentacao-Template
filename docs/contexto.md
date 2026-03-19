@@ -81,7 +81,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
  
 <b>Dataset:</b>Os dados utilizados neste estudo provêm da Pesquisa Nacional de Saúde (PNS)1 de 2019, realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde.
 
-⦁	Período: 2025
+<b>	Período:</b> 2025
 
 <b>Variáveis:</b>
 
