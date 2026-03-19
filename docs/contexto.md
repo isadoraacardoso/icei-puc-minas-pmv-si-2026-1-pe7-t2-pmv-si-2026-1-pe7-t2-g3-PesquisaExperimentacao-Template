@@ -189,43 +189,35 @@ Origem: Instituto nacional de metrologia da Alemanha (PTB)
 
 Tamanho: Tamanho: ~21 mil ECGs.
  
-Tipo	                Variáveis
-Sinais ECG	            12 derivações por 10 segundos (séries temporais)
-Metadados do paciente	Idade, sexo, dispositivo, responsável pelo exame
-Diagnósticos	        5 superclasses, 23 subclasses, 44 diagnósticos (hierárquicos)
-Rótulos	                Multi-hot encoding de diagnósticos (uma amostra pode ter múltiplos)
+Tipo	                  Variáveis
 
-Periodo: 2022
+Sinais ECG	            12 derivações por 10 segundos (séries temporais)
+
+Metadados do paciente	 Idade, sexo, dispositivo, responsável pelo exame
+
+Diagnósticos	          5 superclasses, 23 subclasses, 44 diagnósticos (hierárquicos)
+
+Rótulos	               Multi-hot encoding de diagnósticos (uma amostra pode ter múltiplos)
+
+<b>Periodo:</b> 2022
+
 <b>Abordagem:</b> 
 
-⦁	Random Forest
-
-⦁	KNN
-
-⦁	Regressão Logística
-
-⦁	Otimização com GridSearchCV e RandomizedSearchCV
+	Random Forest,	Regressão Logística e SVM
 
 <b>Métricas:</b>
 
-⦁	Accuracy
-
-⦁	Precision
-
-⦁	Recall
-
-⦁	F1-score
-
-⦁	Confusion matrix
+acurácia, precisão, recall e F1-score
 
 <b>Resultados:</b> 
+| Modelo                              | Acurácia | Precisão | Recall | F1-Score |
+| ----------------------------------- | -------- | -------- | ------ | -------- |
+| Random Forest                       | 88%      | 0,87     | 0,86   | 0,865    |
+| SVM (Máquina de Vetores de Suporte) | 85%      | 0,84     | 0,83   | 0,835    |
+| Regressão Logística                 | 82%      | 0,81     | 0,80   | 0,805    |
 
-⦁	Random Forest: 91% accuracy
-
-⦁	F1-score: 0,89
-
-⦁	Limitação: tamanho reduzido do dataset e baixa generalização.
 https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source=chatgpt.com
+
 <p><b>4. Ensemble Framework para Predição de Doenças Cardiovasculares</b></p>
    
 <b>Problema e contexto:</b> Desenvolver um modelo ensemble para melhorar a precisão na predição de doenças cardíacas.
