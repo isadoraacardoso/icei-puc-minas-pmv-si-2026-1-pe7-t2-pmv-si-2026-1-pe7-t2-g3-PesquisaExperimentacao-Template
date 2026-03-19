@@ -110,6 +110,8 @@ corporal (IMC).
 
 <b>Resultados:</b>
 
+<img width="526" height="165" alt="image" src="https://github.com/user-attachments/assets/0305ed55-07e1-4fdb-ad32-4f36807d7e43" />
+<img width="606" height="180" alt="image" src="https://github.com/user-attachments/assets/1f7c68e6-575f-4ab5-987b-2ceb3f9a6440" />
 <img width="614" height="183" alt="image" src="https://github.com/user-attachments/assets/78125b3b-f757-46da-b1da-32c293da1f73" />
 <img width="618" height="188" alt="image" src="https://github.com/user-attachments/assets/68c2b86d-bd16-445e-a1d4-8d7191620ce2" />
 <img width="618" height="185" alt="image" src="https://github.com/user-attachments/assets/ee2541ff-d42e-44d3-90b6-a86a45c23c2b" />
