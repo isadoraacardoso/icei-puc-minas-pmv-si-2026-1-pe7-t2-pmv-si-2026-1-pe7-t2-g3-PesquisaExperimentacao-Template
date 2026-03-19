@@ -122,7 +122,7 @@ corporal (IMC).
 
 
 
-https://ri.ufs.br/jspui/handle/riufs/23726
+[https://ri.ufs.br/jspui/handle/riufs/23726](https://ri.ufs.br/bitstream/riufs/23726/2/Rivaldo_Correia_Santos_Junior.pdf)
 
 <p><b>2. Uso da Inteligência Artificial Explicável aplicada à predição
 de doenças cardíacas</b></p>
