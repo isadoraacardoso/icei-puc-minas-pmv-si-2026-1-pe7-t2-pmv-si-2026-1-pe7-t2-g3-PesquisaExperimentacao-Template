@@ -275,47 +275,38 @@ Precision, Recall, F1-Score e Support
 
 https://revista.faculdadeitop.edu.br/index.php/revista/article/view/563
 
-<p><b>5. Predição de Doença Cardíaca com Dataset Integrado</b></p>
+<p><b>5. Identificação de Doenças Cardíacas a partir de
+Eletrocardiogramas Utilizando Machine Learning
+</b></p>
    
-<b>Problema e contexto:</b> Prever doenças cardíacas combinando dados de múltiplos hospitais.
+<b>Problema e contexto:</b> As doenças cardiovasculares são a principal causa de morte no mundo.
+De acordo com a Organização Mundial de Saúde, por ano mais de 300 mil pessoas no Brasil sofrem um infarto e até 2040 as mortes por doenças cardiovasculares devem aumentar em 250%.
 
-<b>Dataset:</b> 
+<b>Dataset:</b> The PTB Diagnostic ECG Database.
 
-⦁	Cleveland
+Origem: PhysioNet.
 
-⦁	Hungary
+<img width="294" height="163" alt="image" src="https://github.com/user-attachments/assets/d5882956-9e2c-424f-86d5-f4181c814daf" />
 
-⦁	Switzerland
 
-⦁	Long Beach VA
-
-⦁	~11 variáveis clínicas
-
-⦁	Período: estudos clínicos analisados em pesquisas recentes até 2024.
+	Período: 2019.
 
 <b>Abordagem:</b>
 
-⦁	Random Forest
-
-⦁	SVM
-
-⦁	Logistic Regression
+K Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Tree, Random Forest
 
 <b>Métricas:</b> 
 
-⦁	Accuracy
-
-⦁	Precision
-
-⦁	Recall
+KNN, SVM, Decision Tree, Random Forest.
 
 <b>Resultados:</b> 
 
-⦁	Random Forest: 92,9% accuracy
-
-⦁	SVM: 89,7%
-
-⦁	Logistic Regression: 86,1%
+| Método        | Eficácia |
+| ------------- | -------- |
+| KNN           | 98,87%   |
+| SVM           | 100%     |
+| Decision Tree | 99,85%   |
+| Random Forest | 99,83%   |
 
 
 <b>Síntese Crítica</b>
