@@ -286,8 +286,7 @@ De acordo com a Organização Mundial de Saúde, por ano mais de 300 mil pessoas
 
 Origem: PhysioNet.
 
-<img width="294" height="163" alt="image" src="https://github.com/user-attachments/assets/d5882956-9e2c-424f-86d5-f4181c814daf" />
-
+<img width="321" height="159" alt="image" src="https://github.com/user-attachments/assets/167a45ba-95b8-4c28-a968-e96c4a8645c5" />
 
 <p>Período: 2019.</p>
 
