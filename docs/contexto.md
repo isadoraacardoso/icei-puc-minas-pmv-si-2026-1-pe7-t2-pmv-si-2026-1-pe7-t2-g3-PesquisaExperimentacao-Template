@@ -275,39 +275,42 @@ Precision, Recall, F1-Score e Support
 
 https://revista.faculdadeitop.edu.br/index.php/revista/article/view/563
 
-<p><b>5. Identificação de Doenças Cardíacas a partir de
-Eletrocardiogramas Utilizando Machine Learning
+<p><b>5. Aprendizado de Máquina Aplicado à Predição de Doenças
+Cardiometabólicas com Utilização de Indicadores Metabólicos e
+Comportamentais de Risco à Saúde
 </b></p>
    
-<b>Problema e contexto:</b> As doenças cardiovasculares são a principal causa de morte no mundo.
-De acordo com a Organização Mundial de Saúde, por ano mais de 300 mil pessoas no Brasil sofrem um infarto e até 2040 as mortes por doenças cardiovasculares devem aumentar em 250%.
+<b>Problema e contexto:</b> A necessidade de prever a ocorrência de doenças cardiometabólicas a partir de dados de indivíduos, utilizando técnicas de aprendizado de máquina, e identificar quais algoritmos apresentam melhor desempenho para essa tarefa.
 
-<b>Dataset:</b> The PTB Diagnostic ECG Database.
+<b>Dataset:</b> dataset e do proprio Hospital Escola do Sul do Brasil.
 
-Origem: PhysioNet.
+Origem: Perfil de fatores de risco para as Doenças Crônicas não transmissíveis e programa de exercício físico em servidores públicos de um Hospital Escola do Sul do Brasil.
 
-<img width="321" height="159" alt="image" src="https://github.com/user-attachments/assets/167a45ba-95b8-4c28-a968-e96c4a8645c5" />
+<p>Período: 2021</p>
 
-<p>Período: 2019.</p>
+Tamanho: 560 amostras.
 
 <b>Abordagem:</b>
 
-K Nearest Neighbors (KNN), Support Vector Machine (SVM), Decision Tree, Random Forest
+Naive Bayes, Decision Tree, Random Forest, KNN, Regressão Logística e SVM
 
 <b>Métricas:</b> 
 
-KNN, SVM, Decision Tree, Random Forest.
+acurácia, precisão, revocação, F1-score e AUC-ROC
 
 <b>Resultados:</b> 
 
-| Método        | Eficácia |
-| ------------- | -------- |
-| KNN           | 98,87%   |
-| SVM           | 100%     |
-| Decision Tree | 99,85%   |
-| Random Forest | 99,83%   |
+| Algoritmo           | Variação | Acurácia   | Precisão   | Revocação  | F1-score   |
+| ------------------- | -------- | ---------- | ---------- | ---------- | ---------- |
+| Naive Bayes         | PCA      | 0.6667     | 0.7240     | 0.5386     | 0.6177     |
+| Decision Tree       | PCA      | 0.7681     | 0.7876     | 0.7343     | 0.7600     |
+| **Random Forest**   | **PCA**  | **0.8696** | **0.8714** | **0.8672** | **0.8693** |
+| KNN                 | PCA      | 0.7669     | 0.7297     | 0.8478     | 0.7844     |
+| Logistic Regression | Nenhum   | 0.7150     | 0.7214     | 0.7005     | 0.7108     |
+| SVM                 | PCA      | 0.6558     | 0.8146     | 0.4034     | 0.5396     |
 
-https://dspace.sti.ufcg.edu.br/handle/riufcg/19100
+
+[https://dspace.sti.ufcg.edu.br/handle/riufcg/19100](https://periodicos.univali.br/index.php/acotb/article/view/17418)
 
 <b>Síntese Crítica</b>
 
