@@ -307,7 +307,7 @@ KNN, SVM, Decision Tree, Random Forest.
 | Decision Tree | 99,85%   |
 | Random Forest | 99,83%   |
 
-
+https://dspace.sti.ufcg.edu.br/handle/riufcg/19100
 <b>Síntese Crítica</b>
 
 <p>Após a análise dos projetos, observou-se que eles buscam prever doenças cardiovasculares por meio da utilização de técnicas de aprendizagem de máquina, possibilitando a avaliação do risco dessas doenças em tempo real. Em geral, os estudos apresentam abordagens semelhantes, utilizando algoritmos de aprendizagem supervisionada, como Random Forest, Regressão Logística e SVM, além de métricas de avaliação comuns, como accuracy, precision, recall e F1-score. Entretanto, diferem quanto aos dados utilizados, já que alguns trabalhos utilizam o subconjunto Cleveland, enquanto outros empregam diferentes conjuntos de dados, como Hungary, Statlog ou Long Beach VA.</p>
