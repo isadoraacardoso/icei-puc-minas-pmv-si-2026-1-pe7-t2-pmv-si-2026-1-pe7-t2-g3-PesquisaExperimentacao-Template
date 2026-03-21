@@ -442,3 +442,15 @@ Dessa forma, este projeto adota uma postura de **responsabilidade ética no uso 
 . Acesso em: 6 mar. 2026.
 - WORLD HEALTH ORGANIZATION. Ethics and governance of artificial intelligence for health. Geneva: World Health Organization, 2021. Disponível em: https://www.who.int/publications/i/item/9789240029200
 . Acesso em: 12 mar. 2026.
+  
+.IFPE – Repositório
+[ALVES, João Paulo et al.]. Uso da Inteligência Artificial Explicável aplicada à predição de doenças cardíacas. [s.l.]: Instituto Federal de Pernambuco, [s.d.]. Disponível em: https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Inteligencia%20Artificial%20Explicavel%20aplicada%20a%20predicao%20de%20doencas%20cardiacas.pdf?sequence=1&isAllowed=y. Acesso em: 14 mar. 2026. 
+
+ .SBC – Congresso
+[FERREIRA, Maria; SOUZA, Carlos]. Aplicação de técnicas de aprendizado de máquina em detecção de fraudes. In: Simpósio Brasileiro de Computação Aplicada à Saúde, [s.l.], v. [s.n.], p. [s.n.], 2025. Disponível em: https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source. Acesso em: 15 mar. 2026. 
+      
+ .Revista Faculdade ITOP
+[SILVA, Ana]. Estudo sobre algoritmos de classificação em grandes volumes de dados. Revista Faculdade ITOP, [s.l.], v. 10, n. 2, p. 45-60, 2024. Disponível em: https://revista.faculdadeitop.edu.br/index.php/revista/article/view/563. Acesso em: 15 mar. 2026. 
+      
+ .UFCG – Repositório DSpace
+[RODRIGUES, Pedro Henrique]. Análise de modelos preditivos para gestão hospitalar. [s.l.]: Universidade Federal de Campina Grande, [s.d.]. Disponível em: https://dspace.sti.ufcg.edu.br/handle/riufcg/19100. Acesso em: 17 mar. 2026. 
