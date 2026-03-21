@@ -127,7 +127,7 @@ corporal (IMC).
 <img width="618" height="185" alt="image" src="https://github.com/user-attachments/assets/ee2541ff-d42e-44d3-90b6-a86a45c23c2b" />
 <img width="619" height="183" alt="image" src="https://github.com/user-attachments/assets/0ddea4ff-4c7e-41fd-b0d8-5fcb005cc52d" />
 
-<p><b><a href="[https://ri.ufs.br/jspui/handle/riufs/23726](https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Intelig%c3%aancia%20Artificial%20Explic%c3%a1vel%20aplicada%20%c3%a0%20predi%c3%a7%c3%a3o%20de%20doen%c3%a7as%20card%c3%adacas.pdf?sequence=1&isAllowed=y)">
+
 2. Uso da Inteligência Artificial Explicável aplicada à predição
 de doenças cardíacas
 </a></b></p>
