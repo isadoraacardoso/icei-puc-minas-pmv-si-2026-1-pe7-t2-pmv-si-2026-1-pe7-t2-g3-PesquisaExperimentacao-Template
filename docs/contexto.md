@@ -127,6 +127,8 @@ corporal (IMC).
 <img width="618" height="185" alt="image" src="https://github.com/user-attachments/assets/ee2541ff-d42e-44d3-90b6-a86a45c23c2b" />
 <img width="619" height="183" alt="image" src="https://github.com/user-attachments/assets/0ddea4ff-4c7e-41fd-b0d8-5fcb005cc52d" />
 
+
+
 <p><b>2. Uso da Inteligência Artificial Explicável aplicada à predição
 de doenças cardíacas</b></p>
 
