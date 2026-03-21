@@ -82,7 +82,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 <p>Em outro projeto, Valéria Barbosa de Araújo e Flávio Rosendo da Silva Oliveira (2025) compararam cinco modelos de classificação: Logistic Regression, KNN, MLP, Random Forest e XGBoost. Os autores concluíram que os modelos Random Forest e XGBoost apresentaram os melhores resultados, conforme as métricas utilizadas.</p>
 
 <p>Outros trabalhos relevantes incluem: Silva Filho e Coutinho (2021), que investigaram o uso de algoritmos de aprendizado de máquina e aprendizado profundo para a predição de diagnósticos de doenças cardiovasculares, destacando o desempenho superior de modelos baseados em redes neurais LSTM; Oliveira, Ferreira e Barreiros (2023), que realizaram um estudo comparativo entre KNN, Árvore de Decisão e MLP, obtendo melhor desempenho com a Árvore de Decisão, cuja acurácia superou 96%; e Freitas et al. (2021), que aplicaram técnicas de aprendizado de máquina supervisionado para a predição de doenças cardiometabólicas, utilizando indicadores metabólicos e comportamentais, evidenciando que modelos como Random Forest apresentaram o melhor desempenho preditivo.</p>
-[SANTOS JUNIOR, Rivaldo Correia](https://ri.ufs.br/jspui/handle/riufs/23726)
+
 <p><b>1.[SANTOS JUNIOR, Rivaldo Correia. Predição de doença cardíaca](https://ri.ufs.br/jspui/handle/riufs/23726)</b></p>
 <p><b>Problema e contexto:</b> Construir um modelo capaz de prever a presença de doença cardíaca e identificar os principais fatores de risco associados, utilizando técnicas estatísticas e de aprendizado de máquina. </p>
  
