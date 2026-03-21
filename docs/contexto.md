@@ -83,10 +83,9 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p>Outros trabalhos relevantes incluem: Silva Filho e Coutinho (2021), que investigaram o uso de algoritmos de aprendizado de máquina e aprendizado profundo para a predição de diagnósticos de doenças cardiovasculares, destacando o desempenho superior de modelos baseados em redes neurais LSTM; Oliveira, Ferreira e Barreiros (2023), que realizaram um estudo comparativo entre KNN, Árvore de Decisão e MLP, obtendo melhor desempenho com a Árvore de Decisão, cuja acurácia superou 96%; e Freitas et al. (2021), que aplicaram técnicas de aprendizado de máquina supervisionado para a predição de doenças cardiometabólicas, utilizando indicadores metabólicos e comportamentais, evidenciando que modelos como Random Forest apresentaram o melhor desempenho preditivo.</p>
 
-<p><b><a href="https://ri.ufs.br/jspui/handle/riufs/23726">
+<p><b>
 1. PREDIÇÃO DE DOENÇA CARDÍACA E IDENTIFICAÇÃO DE FATORES DE RISCO COM
-TÉCNICAS ESTATÍSTICAS E DE MACHINE LEARNING
-</a></b></p>
+TÉCNICAS ESTATÍSTICAS E DE MACHINE LEARNING</b></p>
 <p><b>Problema e contexto:</b> Construir um modelo capaz de prever a presença de doença cardíaca e identificar os principais fatores de risco associados, utilizando técnicas estatísticas e de aprendizado de máquina. </p>
  
 <b>Dataset:</b>Os dados utilizados neste estudo provêm da Pesquisa Nacional de Saúde (PNS)1 de 2019, realizada pelo Instituto Brasileiro de Geografia e Estatística (IBGE) em parceria com o Ministério da Saúde.
@@ -440,7 +439,10 @@ Dessa forma, este projeto adota uma postura de **responsabilidade ética no uso 
 . Acesso em: 6 mar. 2026.
 - WORLD HEALTH ORGANIZATION. Ethics and governance of artificial intelligence for health. Geneva: World Health Organization, 2021. Disponível em: https://www.who.int/publications/i/item/9789240029200
 . Acesso em: 12 mar. 2026.
-   
+  
+- [SANTOS JUNIOR, Rivaldo Correia.] Predição de doença cardíaca e identificação de fatores de risco com técnicas estatísticas e de Machine Learning. São Cristóvão: Universidade Federal de Sergipe, 2025. Monografia (Graduação em Estatística) – Departamento de Estatística e Ciências Atuariais. Disponível em: https://ri.ufs.br/jspui/handle/riufs/23726
+. Acesso em: 10 mar. 2026.  
+
 - IFPE – Repositório
 [ALVES, João Paulo et al.]. Uso da Inteligência Artificial Explicável aplicada à predição de doenças cardíacas. [s.l.]: Instituto Federal de Pernambuco, [s.d.]. Disponível em: https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Inteligencia%20Artificial%20Explicavel%20aplicada%20a%20predicao%20de%20doencas%20cardiacas.pdf?sequence=1&isAllowed=y. Acesso em: 14 mar. 2026. 
 - SBC – Congresso
