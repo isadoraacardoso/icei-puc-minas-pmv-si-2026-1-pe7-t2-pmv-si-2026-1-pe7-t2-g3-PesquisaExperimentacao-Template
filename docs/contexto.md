@@ -83,7 +83,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p>Outros trabalhos relevantes incluem: Silva Filho e Coutinho (2021), que investigaram o uso de algoritmos de aprendizado de máquina e aprendizado profundo para a predição de diagnósticos de doenças cardiovasculares, destacando o desempenho superior de modelos baseados em redes neurais LSTM; Oliveira, Ferreira e Barreiros (2023), que realizaram um estudo comparativo entre KNN, Árvore de Decisão e MLP, obtendo melhor desempenho com a Árvore de Decisão, cuja acurácia superou 96%; e Freitas et al. (2021), que aplicaram técnicas de aprendizado de máquina supervisionado para a predição de doenças cardiometabólicas, utilizando indicadores metabólicos e comportamentais, evidenciando que modelos como Random Forest apresentaram o melhor desempenho preditivo.</p>
 
-<p><b>1.PREDIÇÃO DE DOENÇA CARDÍACA E IDENTIFICAÇÃO DE FATORES DE RISCO COM
+<p><b>1. PREDIÇÃO DE DOENÇA CARDÍACA E IDENTIFICAÇÃO DE FATORES DE RISCO COM
 TÉCNICAS ESTATÍSTICAS E DE MACHINE LEARNING</b></p>
 <p><b>Problema e contexto:</b> Construir um modelo capaz de prever a presença de doença cardíaca e identificar os principais fatores de risco associados, utilizando técnicas estatísticas e de aprendizado de máquina. </p>
  
