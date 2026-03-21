@@ -218,7 +218,7 @@ acurácia, precisão, recall e F1-score
 | SVM (Máquina de Vetores de Suporte) | 85%      | 0,84     | 0,83   | 0,835    |
 | Regressão Logística                 | 82%      | 0,81     | 0,80   | 0,805    |
 
-https://sol.sbc.org.br/index.php/sbcas/article/view/21646?utm_source
+
 
 <p><b>4. CLASSIFICAÇÃO DE DOENÇAS CARDIOVASCULARES
 UTILIZANDO APRENDIZADO DE MÁQUINA</b></p>
@@ -277,7 +277,7 @@ Precision, Recall, F1-Score e Support
 | **Rede MLP**          | 0      | 0,88      | 0,73   | 0,80     | 170     |
 |                       | 1      | 0,77      | 0,90   | 0,83     | 172     |
 
-https://revista.faculdadeitop.edu.br/index.php/revista/article/view/563
+
 
 <p><b>5. Aprendizado de Máquina Aplicado à Predição de Doenças
 Cardiometabólicas com Utilização de Indicadores Metabólicos e
@@ -314,7 +314,7 @@ acurácia, precisão, revocação, F1-score e AUC-ROC
 | SVM                 | PCA      | 0.6558     | 0.8146     | 0.4034     | 0.5396     |
 
 
-[https://dspace.sti.ufcg.edu.br/handle/riufcg/19100](https://periodicos.univali.br/index.php/acotb/article/view/17418)
+
 
 <b>Síntese Crítica</b>
 
