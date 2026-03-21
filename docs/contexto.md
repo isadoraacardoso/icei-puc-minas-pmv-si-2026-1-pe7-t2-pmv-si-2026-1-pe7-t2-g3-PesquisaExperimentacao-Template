@@ -83,7 +83,7 @@ Esses grupos geralmente possuem diferentes níveis de familiaridade com tecnolog
 
 <p>Outros trabalhos relevantes incluem: Silva Filho e Coutinho (2021), que investigaram o uso de algoritmos de aprendizado de máquina e aprendizado profundo para a predição de diagnósticos de doenças cardiovasculares, destacando o desempenho superior de modelos baseados em redes neurais LSTM; Oliveira, Ferreira e Barreiros (2023), que realizaram um estudo comparativo entre KNN, Árvore de Decisão e MLP, obtendo melhor desempenho com a Árvore de Decisão, cuja acurácia superou 96%; e Freitas et al. (2021), que aplicaram técnicas de aprendizado de máquina supervisionado para a predição de doenças cardiometabólicas, utilizando indicadores metabólicos e comportamentais, evidenciando que modelos como Random Forest apresentaram o melhor desempenho preditivo.</p>
 
-<p><b><a href="https://ri.ufs.br/jspui/handle/riufs/23726" style="text-decoration:none; color:black;">
+<p><b><a href="https://ri.ufs.br/jspui/handle/riufs/23726">
 1. PREDIÇÃO DE DOENÇA CARDÍACA E IDENTIFICAÇÃO DE FATORES DE RISCO COM
 TÉCNICAS ESTATÍSTICAS E DE MACHINE LEARNING
 </a></b></p>
@@ -128,15 +128,10 @@ corporal (IMC).
 <img width="618" height="185" alt="image" src="https://github.com/user-attachments/assets/ee2541ff-d42e-44d3-90b6-a86a45c23c2b" />
 <img width="619" height="183" alt="image" src="https://github.com/user-attachments/assets/0ddea4ff-4c7e-41fd-b0d8-5fcb005cc52d" />
 
-
-
-
-
-[https://ri.ufs.br/jspui/handle/riufs/23726](https://ri.ufs.br/bitstream/riufs/23726/2/Rivaldo_Correia_Santos_Junior.pdf)
-
-<p><b>2. Uso da Inteligência Artificial Explicável aplicada à predição
-de doenças cardíacas</b></p>
-
+<p><b><a href="[https://ri.ufs.br/jspui/handle/riufs/23726](https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Intelig%c3%aancia%20Artificial%20Explic%c3%a1vel%20aplicada%20%c3%a0%20predi%c3%a7%c3%a3o%20de%20doen%c3%a7as%20card%c3%adacas.pdf?sequence=1&isAllowed=y)">
+2. Uso da Inteligência Artificial Explicável aplicada à predição
+de doenças cardíacas
+</a></b></p>
 <b>Problema e contexto:</b> As doenças cardiovasculares são uma das principais causas de morte no mundo e no Brasil.Há grande necessidade de:
 diagnóstico precoce, prevenção e apoio à decisão médica
 
@@ -183,8 +178,7 @@ Acurácia: 90%, Precisão: 92,30%, Recall: 89,71% e F1-score: 90,99%.
 Acurácia: 87%, Precisão: 91,08%, Recall: 85,98% e F1-score: 88,46%.
 
  <p>Os Modelos: 
- Logistic Regression, KNN e  MLP apresentaram resultados inferiores ao Random Forest e XGBoost.</p>
- https://repositorio.ifpe.edu.br/xmlui/bitstream/handle/123456789/1452/Uso%20da%20Intelig%c3%aancia%20Artificial%20Explic%c3%a1vel%20aplicada%20%c3%a0%20predi%c3%a7%c3%a3o%20de%20doen%c3%a7as%20card%c3%adacas.pdf?sequence=1&isAllowed=y
+ Logistic Regression, KNN e  MLP apresentaram resultados inferiores ao Random Forest e XGBoost.</p> 
 
  
 <p><b>3.Aprendizado de Máquina para Predicão de Diagnósticos de
