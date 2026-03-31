@@ -20,7 +20,7 @@ Inicialmente, a inspeção da base revelou um conjunto robusto de **70.000 regis
 
 ### Distribuição da Variável Alvo
 
-![Distribuição da Variável Alvo](src/graficos/03_distribuicao_variavel_alvo.png)
+![Distribuição da Variável Alvo](/src/graficos/03_distribuicao_variavel_alvo.png)
 
 **Figura 03 - Distribuição da Variável Alvo:** O gráfico evidencia o balanceamento perfeito do dataset com aproximadamente 50% de observações em cada classe (presença/ausência de doença cardiovascular). Essa proporção equivalente é fundamental para evitar vieses na modelagem preditiva posterior.
 
@@ -50,13 +50,13 @@ As medidas de dispersão indicaram uma variabilidade anormal em colunas contínu
 
 ### Distribuição mediante Histogramas (KDE)
 
-![Histogramas com Curva KDE](src/graficos/01_histogramas_distribuicao.png)
+![Histogramas com Curva KDE](/src/graficos/01_histogramas_distribuicao.png)
 
 **Figura 01 - Distribuição das Variáveis Contínuas:** Os histogramas com curva KDE revelam a distribuição de frequência das principais variáveis contínuas. A compressão visual nos quartis centrais é evidente, demonstrando a presença de outliers que afetam significativamente a visualização das distribuições normais.
 
 ### Box Plots por Presença de Doença
 
-![Box Plots por Cardio](src/graficos/02_boxplots_por_cardio.png)
+![Box Plots por Cardio](/src/graficos/02_boxplots_por_cardio.png)
 
 **Figura 02 - Box Plots:** Os box plots segregam as distribuições por presença (1) e ausência (0) de doença cardiovascular. Os pontos dispersos além dos "bigodes" representam os outliers, cuja magnitude revela a necessidade urgente de tratamento desses valores anômalos.
 
@@ -71,7 +71,7 @@ A investigação aprofundada desses outliers revelou um **problema crítico de q
 
 ### Validação Biológica: Pressão Sistólica vs. Diastólica
 
-![Pressão Sistólica vs. Diastólica - Valores Inválidos](src/graficos/07_pressao_invalidos.png)
+![Pressão Sistólica vs. Diastólica - Valores Inválidos](/src/graficos/07_pressao_invalidos.png)
 
 **Figura 07 - Detecção de Anomalias na Pressão Arterial:** O gráfico de dispersão que cruza a pressão sistólica e diastólica isola visualmente essas anomalias em vermelho, confirmando que uma parcela significativa dos dados sofreu erros de digitação. Registros com pressão diastólica superior à sistólica ou valores biologicamente impossíveis são evidentes, exigindo filtragem rigorosa na etapa de limpeza.
 
@@ -81,19 +81,19 @@ A investigação aprofundada desses outliers revelou um **problema crítico de q
 
 ### Relação entre Categorias de Risco e Doença
 
-![Categorias por Doença](src/graficos/04_categoricas_por_cardio.png)
+![Categorias por Doença](/src/graficos/04_categoricas_por_cardio.png)
 
 **Figura 04 - Fatores de Risco Categóricos:** O gráfico de barras empilhadas relaciona categorias de risco (colesterol e glicose) à presença da doença cardiovascular. A análise demonstra que níveis classificados como "Muito Acima do Normal" elevam consideravelmente a proporção de pacientes doentes, evidenciando forte associação entre esses marcadores e a presença da condição.
 
 ### Prevalência por Faixa Etária
 
-![Prevalência por Faixa Etária](src/graficos/09_prevalencia_faixa_etaria.png)
+![Prevalência por Faixa Etária](/src/graficos/09_prevalencia_faixa_etaria.png)
 
 **Figura 09 - Doença por Faixa Etária:** O gráfico que demonstra a prevalência por faixa etária corrobora a correlação positiva de que o avanço da idade acompanha o aumento direto na incidência da doença cardiovascular. Observa-se uma tendência crescente clara conforme a idade avança.
 
 ### Análise Adicional: Idade como Fator de Risco
 
-![Idade por Doença](./src/graficos/08_idade_por_cardio.png)
+![Idade por Doença](/src/graficos/08_idade_por_cardio.png)
 
 **Figura 08 - Distribuição de Idade:** Comparação da distribuição etária entre indivíduos com e sem doença. A sobreposição entre as distribuições indica que, embora a idade seja um fator de risco relevante, não é determinante isoladamente.
 
@@ -105,13 +105,13 @@ A investigação aprofundada desses outliers revelou um **problema crítico de q
 
 Para quantificar as relações lineares entre as variáveis contínuas, utilizou-se o **coeficiente de correlação de Pearson**.
 
-![Heatmap de Correlação](src/graficos/05_heatmap_correlacao.png)
+![Heatmap de Correlação](/src/graficos/05_heatmap_correlacao.png)
 
 **Figura 05 - Matriz de Correlação de Pearson:** O heatmap apresenta a correlação entre todas as variáveis contínuas do dataset. As cores mais intensas indicam correlações mais fortes. Observa-se que a pressão sistólica apresenta correlação substancial com a pressão diastólica e com a variável alvo.
 
 ### Correlação com a Variável Alvo
 
-![Correlação com Alvo](src/graficos/06_correlacao_com_alvo.png)
+![Correlação com Alvo](/src/graficos/06_correlacao_com_alvo.png)
 
 **Figura 06 - Correlação de Cada Variável com o Alvo:** O gráfico de barras ordena as variáveis pela magnitude de sua correlação linear com a presença de doença cardiovascular. Os resultados indicam que:
 
@@ -127,7 +127,7 @@ Em contrapartida, variáveis isoladas de hábitos de vida, como **tabagismo e co
 
 ### Pairplot de Variáveis Principais
 
-![Pairplot Multivariado](src/graficos/10_pairplot.png)
+![Pairplot Multivariado](/src/graficos/10_pairplot.png)
 
 **Figura 10 - Relações Multivariadas:** A exploração multivariada através do pairplot cruzando Idade, IMC e Pressões demonstra a complexidade do problema estrutural subjacente. Ao colorir os pontos de dados pela presença ou ausência da doença, notou-se:
 
@@ -175,7 +175,7 @@ Esse achado é fundamental, pois **direciona a modelagem preditiva da próxima e
 ## 📊 Resumo das Estatísticas Descritivas
 
 As estatísticas descritivas detalhadas estão disponibilizadas em:
-📄 [Tabela de Estatísticas Descritivas](src/graficos/tabela_estatisticas_descritivas.csv)
+📄 [Tabela de Estatísticas Descritivas](/src/graficos/tabela_estatisticas_descritivas.csv)
 
 ---
 
