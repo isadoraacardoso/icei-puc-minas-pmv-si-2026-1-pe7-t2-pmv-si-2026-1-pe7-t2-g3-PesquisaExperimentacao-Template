@@ -229,4 +229,6 @@ A precisão dos futuros modelos preditivos dependerá fundamentalmente de um **p
 ## 📚 Referências
 
 - SULIANOVA, Svetlana. Cardiovascular Disease dataset. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset . Acesso em: 7 mar. 2026.
-- **Etapa do Projeto:** Análise Exploratória de Dados (EDA)
+- EBAC ONLINE. Análise exploratória de dados (AED): o que é, ferramentas, técnicas e exemplos. Disponível em: Acessar artigo . Acesso em: 9 mar. 2026.
+- MEDRI, Waldir. Análise exploratória de dados. Londrina: Universidade Estadual de Londrina, 2011. Disponível em: https://docs.ufpr.br/~benitoag/apostilamedri.pdf . Acesso em: 11 mar. 2026.
+- SANDOVAL, Mônica Carneiro. Estatística descritiva. São Paulo: Universidade de São Paulo (USP), 2014. Disponível em: http://wiki.icmc.usp.br/images/2/23/Estat%C3%ADsticaDescritiva2014_1.pdf . Acesso em: 15 mar. 2026.
