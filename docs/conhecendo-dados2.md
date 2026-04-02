@@ -228,6 +228,5 @@ A precisão dos futuros modelos preditivos dependerá fundamentalmente de um **p
 
 ## 📚 Referências
 
-- **Dataset:** Cardiovascular Disease Dataset - Kaggle
-- **Fonte:** https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset
+- SULIANOVA, Svetlana. Cardiovascular Disease dataset. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset . Acesso em: 7 mar. 2026.
 - **Etapa do Projeto:** Análise Exploratória de Dados (EDA)
