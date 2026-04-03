@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import os
 
+
 # =========================
 # Criar pasta para gráficos
 # =========================
