@@ -214,7 +214,7 @@ src/
 
 ---
 
-# 8. Reanálise Após Limpeza por Critérios Clínicos e Remoção de Valores Anômalos
+## 8. Reanálise Após Limpeza por Critérios Clínicos e Remoção de Valores Anômalos
 
 Após a etapa inicial de identificação de anomalias, foi realizada uma nova análise exploratória utilizando a base já tratada (`cardio_train_sem_outliers.csv`). Essa segunda análise tem como objetivo verificar o comportamento estatístico das variáveis após a remoção dos registros biologicamente inconsistentes.
 
@@ -222,7 +222,7 @@ A nova base apresenta distribuições mais estáveis e permite interpretações 
 
 ---
 
-## Carregamento da Base Tratada
+### Carregamento da Base Tratada
 
 ```python
 import pandas as pd
