@@ -261,8 +261,7 @@ O comando shape permite verificar quantos registros permaneceram após a limpeza
 - Quartis mais coerentes
 - Desvio padrão reduzido em pressão arterial
 - Melhor distribuição de peso e altura
-
-Isso demonstra que os valores extremos anteriormente presentes estavam distorcendo fortemente a leitura estatística.
+- Permaneceram 66.488 registros válidos, correspondendo a aproximadamente 94,98% da base original. 
 
 ### Histogramas das Variáveis Após Limpeza
 
