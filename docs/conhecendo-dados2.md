@@ -214,6 +214,178 @@ src/
 
 ---
 
+# 8. Reanálise Após Limpeza por Critérios Clínicos e Remoção de Valores Anômalos
+
+Após a etapa inicial de identificação de anomalias, foi realizada uma nova análise exploratória utilizando a base já tratada (`cardio_train_sem_outliers.csv`). Essa segunda análise tem como objetivo verificar o comportamento estatístico das variáveis após a remoção dos registros biologicamente inconsistentes.
+
+A nova base apresenta distribuições mais estáveis e permite interpretações estatísticas mais confiáveis, reduzindo o impacto de valores extremos anteriormente detectados.
+
+---
+
+## Carregamento da Base Tratada
+
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+
+# Criar pasta para armazenar os gráficos
+os.makedirs('graficos', exist_ok=True)
+
+# Carregar base já tratada
+df = pd.read_csv('cardio_train_sem_outliers.csv', sep=';')
+```
+
+Nesta etapa, foi utilizada a base já limpa, contendo apenas registros considerados biologicamente plausíveis. A criação automática da pasta graficos garante organização dos arquivos gerados.
+
+### Estatísticas Gerais da Base Pós-Limpeza
+
+```
+print("Dimensões da base:")
+print(df.shape)
+
+print("\nInformações gerais:")
+print(df.info())
+
+print("\nEstatísticas descritivas:")
+print(df.describe())
+Comentário do código
+```
+
+O comando shape permite verificar quantos registros permaneceram após a limpeza. Já describe() fornece medidas fundamentais como média, quartis e desvio padrão.
+
+#### Após a limpeza:
+
+- Redução da variabilidade extrema
+- Quartis mais coerentes
+- Desvio padrão reduzido em pressão arterial
+- Melhor distribuição de peso e altura
+
+Isso demonstra que os valores extremos anteriormente presentes estavam distorcendo fortemente a leitura estatística.
+
+### Histogramas das Variáveis Após Limpeza
+
+<img width="1500" height="589" alt="Figure_1" src="https://github.com/user-attachments/assets/054ff8e8-0757-4853-bf42-66319ee76485" /> <br>
+
+```
+df.hist(figsize=(15,10))
+plt.tight_layout()
+plt.savefig('graficos/histogramas.png')
+plt.show()
+```
+
+Os histogramas permitem observar a distribuição de frequência de todas as variáveis numéricas simultaneamente.
+
+#### Após a remoção dos outliers:
+
+- As distribuições tornaram-se mais concentradas
+- A pressão arterial perdeu caudas artificiais extremas
+- Peso e altura apresentaram comportamento mais próximo do esperado biologicamente
+
+### Heatmap de Correlação Atualizado
+
+<img width="1200" height="636" alt="Figure_2" src="https://github.com/user-attachments/assets/bf0d825f-c6b7-4aea-8919-624ff8b1f5df" /> <br>
+
+```
+plt.figure(figsize=(12,8))
+sns.heatmap(df.corr(), annot=True, cmap='coolwarm')
+plt.title('Mapa de Correlação')
+plt.savefig('graficos/heatmap_correlacao.png')
+plt.show()
+```
+
+A matriz de correlação foi recalculada para avaliar se a remoção de outliers alterou relações lineares entre variáveis.
+
+#### Mantiveram-se como principais relações:
+
+- Pressão sistólica ↔ variável alvo
+- Idade ↔ variável alvo
+- Colesterol ↔ variável alvo
+
+A limpeza reduziu ruídos estatísticos, tornando os coeficientes mais estáveis.
+
+### Boxplot da Pressão Sistólica
+
+<img width="800" height="500" alt="Figure_3" src="https://github.com/user-attachments/assets/def5ace5-f7d7-40af-95d3-a2aea4531728" /> <br>
+
+````
+plt.figure(figsize=(8,5))
+sns.boxplot(x=df['ap_hi'])
+plt.title('Boxplot Pressão Sistólica')
+plt.savefig('graficos/boxplot_pressao.png')
+plt.show()
+````
+
+### Boxplot do Peso
+
+<img width="800" height="500" alt="Figure_4" src="https://github.com/user-attachments/assets/0b25953c-7f99-43af-ad7d-7b3330f7f2e4" /> <br>
+
+````
+plt.figure(figsize=(8,5))
+sns.boxplot(x=df['weight'])
+plt.title('Boxplot Peso')
+plt.savefig('graficos/boxplot_peso.png')
+plt.show()
+````
+
+Os boxplots mostram claramente que, após a limpeza, ainda existem variações naturais, porém sem os extremos absurdos encontrados anteriormente.
+
+### Relação entre Colesterol e Doença Cardiovascular
+
+<img width="800" height="500" alt="Figure_5" src="https://github.com/user-attachments/assets/6a20c1c8-31a4-4d76-98b0-c142d9c78685" /> <br>
+
+````
+plt.figure(figsize=(8,5))
+sns.countplot(x='cholesterol', hue='cardio', data=df)
+plt.title('Colesterol x Doença Cardíaca')
+plt.savefig('graficos/colesterol_cardio.png')
+plt.show()
+````
+
+Pacientes com colesterol elevado continuam apresentando maior incidência de doença cardiovascular.
+
+### Relação entre Glicose e Doença Cardiovascular
+
+<img width="800" height="500" alt="Figure_6" src="https://github.com/user-attachments/assets/6c393f34-8a23-48e0-9a2b-ae9202324a1f" /> <br>
+
+````
+plt.figure(figsize=(8,5))
+sns.countplot(x='gluc', hue='cardio', data=df)
+plt.title('Glicose x Doença Cardíaca')
+plt.savefig('graficos/glicose_cardio.png')
+plt.show()
+````
+
+Níveis elevados de glicose mantêm associação importante com aumento da prevalência da doença.
+
+### Relação entre Tabagismo e Doença Cardiovascular
+
+<img width="800" height="500" alt="Figure_7" src="https://github.com/user-attachments/assets/dab246bd-a6c0-47a5-bb33-2392298e64c6" /> <br>
+
+````
+plt.figure(figsize=(8,5))
+sns.countplot(x='smoke', hue='cardio', data=df)
+plt.title('Fumante x Doença Cardíaca')
+plt.savefig('graficos/fumante_cardio.png')
+plt.show()
+````
+
+A variável tabagismo apresenta correlação visual mais fraca isoladamente, sugerindo efeito combinado com outros fatores.
+
+### Conclusão Pós-Limpeza
+
+A nova análise confirma que a remoção de outliers melhorou significativamente a qualidade estatística da base.
+
+Principais ganhos:
+
+- Distribuições mais realistas
+- Correlações mais confiáveis
+- Redução de ruído estatístico
+- Melhor preparação para modelagem preditiva
+
+A análise inicial foi mantida para demonstrar o impacto dos outliers, enquanto a análise subsequente utiliza a base tratada para evidenciar a melhoria estatística obtida após a limpeza.
+
 ## 📝 Observações Finais
 
 A precisão dos futuros modelos preditivos dependerá fundamentalmente de um **pipeline de engenharia focado na correção das anomalias de digitação** descobertas nesta exploração. O balanceamento natural do dataset e a robustez estrutural observada sugerem excelentes perspectivas para a construção de modelos de classificação eficazes após o tratamento adequado dos problemas de qualidade identificados.
@@ -228,7 +400,22 @@ A precisão dos futuros modelos preditivos dependerá fundamentalmente de um **p
 
 ## 📚 Referências
 
-- SULIANOVA, Svetlana. Cardiovascular Disease dataset. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset . Acesso em: 7 mar. 2026.
-- EBAC ONLINE. Análise exploratória de dados (AED): o que é, ferramentas, técnicas e exemplos. Disponível em: Acessar artigo . Acesso em: 9 mar. 2026.
-- MEDRI, Waldir. Análise exploratória de dados. Londrina: Universidade Estadual de Londrina, 2011. Disponível em: https://docs.ufpr.br/~benitoag/apostilamedri.pdf . Acesso em: 11 mar. 2026.
-- SANDOVAL, Mônica Carneiro. Estatística descritiva. São Paulo: Universidade de São Paulo (USP), 2014. Disponível em: http://wiki.icmc.usp.br/images/2/23/Estat%C3%ADsticaDescritiva2014_1.pdf . Acesso em: 15 mar. 2026.
+SULIANOVA, Svetlana. Cardiovascular Disease dataset. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset . Acesso em: 7 mar. 2026.
+
+EBAC ONLINE. Análise exploratória de dados (AED): o que é, ferramentas, técnicas e exemplos. Disponível em: Acessar artigo . Acesso em: 9 mar. 2026.
+
+MEDRI, Waldir. Análise exploratória de dados. Londrina: Universidade Estadual de Londrina, 2011. Disponível em: https://docs.ufpr.br/~benitoag/apostilamedri.pdf . Acesso em: 11 mar. 2026.
+
+SANDOVAL, Mônica Carneiro. Estatística descritiva. São Paulo: Universidade de São Paulo (USP), 2014. Disponível em: http://wiki.icmc.usp.br/images/2/23/Estat%C3%ADsticaDescritiva2014_1.pdf . Acesso em: 15 mar. 2026.
+
+PYTHON SOFTWARE FOUNDATION. *Python Language Reference, version 3.x*. Wilmington: Python Software Foundation, 2024. Disponível em: <https://www.python.org>. Acesso em: 20 mar. 2026.
+
+MCKINNEY, Wes. *Data structures for statistical computing in Python*. In: PYTHON IN SCIENCE CONFERENCE, 9., 2010, Austin. Proceedings [...]. Austin: SciPy, 2010. p. 56-61. Disponível em: <https://pandas.pydata.org>. Acesso em: 20 mar. 2026.
+
+HARRIS, Charles R. et al. *Array programming with NumPy*. Nature, Londres, v. 585, p. 357–362, 2020. Disponível em: <https://numpy.org>. Acesso em: 26 mar. 2026.
+
+HUNTER, John D. *Matplotlib: A 2D graphics environment*. Computing in Science & Engineering, v. 9, n. 3, p. 90-95, 2007. Disponível em: <https://matplotlib.org>. Acesso em: 26 mar. 2026.
+
+WAASKOM, Michael L. *Seaborn: statistical data visualization*. Journal of Open Source Software, v. 6, n. 60, 2021. Disponível em: <https://seaborn.pydata.org>. Acesso em: 27 mar. 2026.
+
+VIRTANEN, Pauli et al. *SciPy 1.0: fundamental algorithms for scientific computing in Python*. Nature Methods, v. 17, p. 261-272, 2020. Disponível em: <https://scipy.org>. Acesso em: 27 mar. 2026.
