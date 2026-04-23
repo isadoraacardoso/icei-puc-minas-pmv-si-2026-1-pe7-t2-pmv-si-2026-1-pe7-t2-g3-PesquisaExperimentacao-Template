@@ -52,13 +52,13 @@ As medidas de dispersão indicaram uma variabilidade anormal em colunas contínu
 
 ![Histogramas com Curva KDE](/src/graficos/01_histogramas_distribuicao.png)
 
-**Figura 01 - Distribuição das Variáveis Contínuas:** Os histogramas com curva KDE revelam a distribuição de frequência das principais variáveis contínuas. A compressão visual nos quartis centrais é evidente, demonstrando a presença de outliers que afetam significativamente a visualização das distribuições normais.
+**Figura 01 - Distribuição das Variáveis Contínuas:** Os histogramas com curva KDE revelam a distribuição de frequência das principais variáveis contínuas. (Nota: Recorte visual aplicado entre os quantis 1% e 99% para manter a legibilidade da escala). A compressão visual nos quartis centrais é evidente, demonstrando a presença de outliers que afetam significativamente a visualização das distribuições normais.
 
 ### Box Plots por Presença de Doença
 
 ![Box Plots por Cardio](/src/graficos/02_boxplots_por_cardio.png)
 
-**Figura 02 - Box Plots:** Os box plots segregam as distribuições por presença (1) e ausência (0) de doença cardiovascular. Os pontos dispersos além dos "bigodes" representam os outliers, cuja magnitude revela a necessidade urgente de tratamento desses valores anômalos.
+**Figura 02 - Box Plots:** Os box plots segregam as distribuições por presença (1) e ausência (0) de doença cardiovascular. (Nota: Recorte visual aplicado entre os quantis 1% e 99% para manter a legibilidade da escala). Os pontos dispersos além dos "bigodes" representam os outliers visíveis neste escopo. A magnitude real e absoluta dos valores anômalos extremos que extrapolam essa visualização (ex: pressões zeradas ou acima de 10.000) foi isolada e está detalhada no arquivo *(colocar o caminho do arquivo aqui Ex: tabelas/relatorio_outliers_extremos.csv).*
 
 ### Análise Aprofundada de Outliers
 
