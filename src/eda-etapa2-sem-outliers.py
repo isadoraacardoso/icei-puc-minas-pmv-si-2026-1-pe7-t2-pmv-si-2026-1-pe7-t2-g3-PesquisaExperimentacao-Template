@@ -9,9 +9,9 @@ import os
 os.makedirs('graficos', exist_ok=True)
 
 # =========================
-# Carregar base
+# Carregar base (DADOS LIMPOS)
 # =========================
-df = pd.read_csv('cardio_train_final.csv', sep=';')
+df = pd.read_csv('cardio_train_sem_outliers.csv', sep=';')
 
 # =========================
 # Informações gerais
