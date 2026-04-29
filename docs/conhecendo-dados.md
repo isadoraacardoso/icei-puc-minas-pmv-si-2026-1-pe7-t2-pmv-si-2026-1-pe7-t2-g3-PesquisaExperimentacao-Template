@@ -425,7 +425,49 @@ Principais ganhos:
 
 A análise inicial foi mantida para demonstrar o impacto dos outliers, enquanto a análise subsequente utiliza a base tratada para evidenciar a melhoria estatística obtida após a limpeza.
 
-## 📝 Observações Finais
+---
+
+## 9. Medidas de Tendência Central e Dispersão
+
+### Estatísticas Descritivas Antes da Limpeza
+
+| Variável             | Média | Mediana | Moda | Desvio Padrão | IQR  | Mín   | Máx      | Assimetria | Curtose |
+|---------------------|------|--------|------|---------------|------|-------|----------|------------|---------|
+| Idade (anos)        | 53.30 | 53.90  | 56.00 | 6.76          | 10.00 | 29.60 | 64.90    | -0.31      | -0.82   |
+| Altura (cm)         | 164.36 | 165.00 | 165.00 | 8.21       | 11.00 | 55.00 | 250.00   | -0.64      | 7.94    |
+| Peso (kg)           | 74.21 | 72.00  | 65.00 | 14.40        | 17.00 | 10.00 | 200.00   | 1.01       | 2.59    |
+| Pressão Sistólica   | 128.82 | 120.00 | 120.00 | 154.01    | 20.00 | -150.00 | 16020.00 | 85.30      | 7580.07 |
+| Pressão Diastólica  | 96.63 | 80.00  | 80.00 | 188.47       | 10.00 | -70.00 | 11000.00 | 32.11      | 1425.91 |
+| IMC                 | 27.56 | 26.38  | 23.88 | 6.09         | 6.34  | 3.47  | 298.67   | 7.73       | 221.23  |
+
+### Estatísticas Descritivas Após a Limpeza
+
+Após a etapa de limpeza, a base resultante foi normalizada para o intervalo [0, 1], o que explica os valores mínimos e máximos observados.
+
+| Métrica                         | Valor |
+|--------------------------------|------|
+| Número de registros            | 66.488 |
+| Média da variável alvo (cardio)| 0.4897 |
+| Proporção com doença           | 48,97% |
+| Proporção sem doença           | 51,03% |
+| Proporção de fumantes          | 8,67% |
+| Proporção de consumo de álcool | 5,24% |
+| Proporção fisicamente ativos   | 80,42% |
+| Proporção de colesterol alterado | 11,02% |
+
+Observa-se que, após a limpeza, os dados foram submetidos a um processo de normalização, resultando em valores no intervalo entre 0 e 1 para as variáveis numéricas.
+
+Essa transformação é comum em etapas de preparação para modelagem preditiva, pois melhora o desempenho de diversos algoritmos de aprendizado de máquina.
+
+No entanto, essa normalização altera a interpretação direta das estatísticas descritivas tradicionais (como mínimos e máximos), que passam a representar posições relativas e não valores reais.
+
+Mesmo assim, é possível extrair informações relevantes, especialmente para variáveis binárias, como a variável alvo (cardio), cuja média indica diretamente a proporção de indivíduos com doença cardiovascular na base.
+
+A base final manteve 66.488 registros válidos, correspondendo a aproximadamente 94,98% da base original, evidenciando que a limpeza removeu apenas registros inconsistentes, preservando a maior parte dos dados.
+
+---
+
+## 10. Observações Finais
 
 A precisão dos futuros modelos preditivos dependerá fundamentalmente de um **pipeline de engenharia focado na correção das anomalias de digitação** descobertas nesta exploração. O balanceamento natural do dataset e a robustez estrutural observada sugerem excelentes perspectivas para a construção de modelos de classificação eficazes após o tratamento adequado dos problemas de qualidade identificados.
 
