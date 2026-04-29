@@ -316,6 +316,34 @@ A matriz de correlação foi recalculada para avaliar se a remoção de outliers
 
 A limpeza reduziu ruídos estatísticos, tornando os coeficientes mais estáveis.
 
+### Complemento da Análise de Correlação
+
+Para aprimorar a análise estatística e considerar diferentes tipos de variáveis, foram aplicadas técnicas complementares à correlação de Pearson.
+
+- Para variáveis ordinais (como colesterol e glicose), foi utilizada a **correlação de Spearman**, que captura relações monotônicas.
+  
+  <img width="1203" height="800" alt="Figure sperman" src="https://github.com/user-attachments/assets/c969ca47-1d17-4e74-80c3-e565666c429e" />
+  
+- Para variáveis categóricas (como tabagismo, consumo de álcool e atividade física), foi aplicado o **teste qui-quadrado de independência**. E para medir a intensidade da associação entre variáveis categóricas e a variável alvo, foi utilizado o **coeficiente de Cramér’s V**.
+
+   | Variável           | p-valor  | Cramér’s V | Interpretação                  |
+   |-------------------|---------|-----------|-------------------------------|
+   | Colesterol        | < 0.001 | 0.2203    | Associação fraca a moderada   |
+   | Glicose           | < 0.001 | 0.0909    | Associação muito fraca        |
+   | Tabagismo         | < 0.001 | 0.0193    | Associação muito fraca        |
+   | Álcool            | 0.0072  | 0.0104    | Associação muito fraca        |
+   | Atividade Física  | < 0.001 | 0.0375    | Associação muito fraca        |
+
+   Os resultados do teste qui-quadrado indicam que todas as variáveis analisadas apresentam associação estatisticamente significativa com a presença de doença cardiovascular (p < 0.05).
+
+   No entanto, ao analisar a intensidade dessas associações por meio do coeficiente de Cramér’s V, observa-se que a maioria das variáveis apresenta associação muito fraca.
+
+   A variável colesterol se destaca como a mais relevante entre as categóricas, apresentando associação de intensidade fraca a moderada com a variável alvo. Já glicose, tabagismo, consumo de álcool e atividade física         apresentam associação muito fraca quando consideradas isoladamente.
+
+   Esses resultados indicam que, embora algumas variáveis comportamentais e clínicas tenham relação estatística com a doença, sua capacidade explicativa individual é limitada, reforçando a necessidade de análise              multivariada e uso de modelos preditivos que considerem a combinação de múltiplos fatores.
+
+   Destaca-se que correlação ou associação estatística não implica causalidade.
+
 ### Boxplot da Pressão Sistólica
 
 <img width="800" height="500" alt="Figure_3" src="https://github.com/user-attachments/assets/def5ace5-f7d7-40af-95d3-a2aea4531728" /> <br>
