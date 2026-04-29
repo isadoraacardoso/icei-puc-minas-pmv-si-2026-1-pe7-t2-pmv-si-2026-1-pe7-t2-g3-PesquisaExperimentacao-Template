@@ -147,7 +147,7 @@ Em contrapartida, variáveis isoladas de hábitos de vida, como **tabagismo e co
 - ⚠️ **Inexistência de separação linear simples**
 - ✅ **Estrutura de dados revelando complexidade não-linear**
 
-Esse achado é fundamental, pois **direciona a modelagem preditiva da próxima etapa para a necessidade de utilização de algoritmos não-lineares mais complexos** (como baseados em árvores ou redes neurais).
+Esse achado é fundamental, pois **sugere a modelagem preditiva da próxima etapa para a de utilização de algoritmos não-lineares mais complexos** (como baseados em árvores ou redes neurais), mas não descarta modelos lineares como baseline.
 
 ---
 
