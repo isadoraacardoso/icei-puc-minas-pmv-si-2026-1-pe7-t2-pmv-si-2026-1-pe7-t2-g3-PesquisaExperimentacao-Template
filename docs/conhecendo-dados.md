@@ -16,13 +16,25 @@ A presente etapa apresenta uma **Análise Exploratória de Dados (EDA)** abrange
 
 ## 1. Inspeção Inicial e Balanceamento
 
-Inicialmente, a inspeção da base revelou um conjunto robusto de **70.000 registros sem valores nulos**. A análise da distribuição da variável alvo demonstrou que o dataset é perfeitamente balanceado, contendo proporções equivalentes de pacientes saudáveis e com doença cardiovascular, o que configura um cenário ideal para a futura modelagem preditiva.
+Inicialmente, a inspeção da base revelou um conjunto robusto de **70.000 registros sem valores nulos**. A análise da distribuição da variável alvo demonstrou que o dataset é aproximadamente balanceado, contendo proporções equivalentes de pacientes saudáveis e com doença cardiovascular, o que configura um cenário ideal para a futura modelagem preditiva.
 
 ### Distribuição da Variável Alvo
 
 ![Distribuição da Variável Alvo](/src/graficos/03_distribuicao_variavel_alvo.png)
 
-**Figura 03 - Distribuição da Variável Alvo:** O gráfico evidencia o balanceamento perfeito do dataset com aproximadamente 50% de observações em cada classe (presença/ausência de doença cardiovascular). Essa proporção equivalente é fundamental para evitar vieses na modelagem preditiva posterior.
+**Figura 03 - Distribuição da Variável Alvo:** O gráfico evidencia o balanceamento do dataset com aproximadamente 50% de observações em cada classe (presença/ausência de doença cardiovascular). Essa proporção equivalente é fundamental para evitar vieses na modelagem preditiva posterior.
+
+- Antes da limpeza:
+
+Sem doença: ~50%
+Com doença: ~50%
+
+- Após a limpeza:
+
+Sem doença: 51,03%
+Com doença: 48,97%
+
+Portanto, o dataset pode ser considerado aproximadamente balanceado, o que favorece a modelagem preditiva.
 
 ---
 
