@@ -1,4 +1,4 @@
-Variável,count,mean,mediana,moda,std,IQR,min,25%,75%,max,assimetria,curtose
+Variável,qtd,media,mediana,moda,desvio padrão,IQR,min,25%,75%,max,assimetria,curtose
 Idade (anos),70000.0,53.3,53.9,56.0,6.76,10.0,29.6,48.4,58.4,64.9,-0.31,-0.82
 Altura (cm),70000.0,164.36,165.0,165.0,8.21,11.0,55.0,159.0,170.0,250.0,-0.64,7.94
 Peso (kg),70000.0,74.21,72.0,65.0,14.4,17.0,10.0,65.0,82.0,200.0,1.01,2.59

@@ -123,7 +123,20 @@ desc['curtose'] = df_desc.kurtosis()
 
 cols_print = ['count', 'mean', 'mediana', 'moda', 'std', 'IQR',
               'min', '25%', '75%', 'max', 'assimetria', 'curtose']
+
 desc_final = desc[cols_print].round(2)
+
+desc_final = desc_final.rename(columns={
+    'count': 'qtd',
+    'mean': 'media',
+    'std': 'desvio padrão',
+    'min': 'min',
+    '25%': '25%',
+    '75%': '75%',
+    'max': 'max',
+    'IQR': 'IQR'
+})
+
 desc_final.index.name = 'Variável'
 
 print("\n  TABELA DE ESTATÍSTICAS DESCRITIVAS:")
