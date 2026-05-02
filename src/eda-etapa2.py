@@ -16,9 +16,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import seaborn as sns
-from scipy import stats
 import os
 import warnings
+from scipy import stats
+from pathlib import Path
 
 warnings.filterwarnings('ignore')
 
@@ -41,8 +42,11 @@ print("=" * 65)
 # =============================================================================
 print("\n[1/8] Carregando o dataset...")
 
+BASE_DIR = Path(__file__).resolve().parent
+CSV_PATH = BASE_DIR / 'cardio_train.csv'
+
 try:
-    df = pd.read_csv('cardio_train.csv', sep=';')
+    df = pd.read_csv(CSV_PATH, sep=';')
     print(f"  ✓ Dataset carregado com sucesso.")
 except FileNotFoundError:
     print("  ✗ ERRO: Arquivo 'cardio_train.csv' não encontrado.")
