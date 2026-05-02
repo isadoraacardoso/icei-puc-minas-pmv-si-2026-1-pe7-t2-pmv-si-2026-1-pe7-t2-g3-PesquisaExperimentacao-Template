@@ -147,6 +147,12 @@ desc_final.to_csv('graficos/tabela_estatisticas_descritivas.csv')
 print("\n  ✓ Tabela salva em 'graficos/tabela_estatisticas_descritivas.csv'")
 
 # Variáveis categóricas
+# Qual é a proporção de homens e mulheres?
+# Quantas pessoas têm colesterol ou glicose normal ou elevado?
+# Quantas pessoas fumam?
+# Quantas consomem álcool?
+# Quantas praticam atividade física?
+# A variável alvo está balanceada?
 print("\n  DISTRIBUIÇÃO DAS VARIÁVEIS CATEGÓRICAS:")
 cat_vars = {
     'Gênero': df_plot['gender_label'],
