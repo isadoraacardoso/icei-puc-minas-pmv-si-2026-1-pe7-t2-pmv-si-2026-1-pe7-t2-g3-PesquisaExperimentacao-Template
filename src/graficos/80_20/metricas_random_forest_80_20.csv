@@ -1,0 +1,2 @@
+divisao;treino_percentual;teste_percentual;registros_total;registros_treino;registros_teste;accuracy;precision;recall;f1_score;auc_roc;tn;fp;fn;tp;cv_auc_mean;cv_auc_std
+80_20;80;20;68677;54941;13736;0.7079935934769948;0.7081153788671349;0.6971748087110065;0.7026025061170016;0.7699696634568902;4987;1953;2058;4738;0.7712961632752064;0.0032238038874239823

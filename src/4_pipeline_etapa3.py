@@ -15,7 +15,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
-
+from pathlib import Path
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn.preprocessing import StandardScaler
 from sklearn.compose import ColumnTransformer
@@ -49,10 +49,10 @@ print("=" * 65)
 print("\n[1/6] Carregando o dataset...")
 
 try:
-    df = pd.read_csv('cardio_train.csv', sep=';')
+    df = pd.read_csv("cardio_train_sem_valores_invalidos.csv", sep=';')
     print(f"  ✓ Dataset carregado: {df.shape[0]:,} registros × {df.shape[1]} colunas")
 except FileNotFoundError:
-    print("  ✗ ERRO: 'cardio_train.csv' não encontrado na raiz do projeto.")
+    print("  ✗ ERRO: 'cardio_train_sem_valores_invalidos.csv' não encontrado na raiz do projeto.")
     exit()
 
 n_original = len(df)
@@ -81,8 +81,8 @@ print("  ✓ Idade convertida de dias para anos (age_years = age / 365.25).")
 # O Índice de Massa Corporal combina peso e altura em um único índice clínico
 # amplamente utilizado para avaliar risco cardiovascular.
 # Fórmula: IMC = peso(kg) / altura(m)²
-df['bmi'] = (df['weight'] / ((df['height'] / 100) ** 2)).round(2)
-print("  ✓ IMC calculado (bmi = weight / (height/100)²).")
+df['IMC'] = (df['weight'] / ((df['height'] / 100) ** 2)).round(2)
+print("  ✓ IMC calculado (IMC = weight / (height/100)²).")
 
 # --- 2.4 Remoção de registros clinicamente inválidos ---
 # Registros com valores biologicamente impossíveis são erros de entrada,
@@ -140,7 +140,7 @@ y = df_clean['cardio']
 # (ele usa thresholds de divisão, não distâncias), incluir a normalização
 # torna o pipeline reutilizável para outros algoritmos (ex: Regressão Logística,
 # SVM) sem modificações. É uma boa prática de engenharia de pipelines.
-continuous_cols = ['age_years', 'height', 'weight', 'ap_hi', 'ap_lo', 'bmi']
+continuous_cols = ['age_years', 'height', 'weight', 'ap_hi', 'ap_lo', 'IMC']
 
 # Variáveis categóricas/binárias: já estão codificadas numericamente.
 # cholesterol e gluc são ordinais (1 < 2 < 3), o que é semântico e correto.
