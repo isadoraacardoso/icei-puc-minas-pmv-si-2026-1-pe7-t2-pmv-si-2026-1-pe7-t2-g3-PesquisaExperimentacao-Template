@@ -4,6 +4,8 @@ import seaborn as sns
 import os
 import numpy as np
 from scipy.stats import chi2_contingency
+from pathlib import Path
+
 # =========================
 # Criar pasta para gráficos
 # =========================
@@ -12,11 +14,16 @@ os.makedirs('graficos', exist_ok=True)
 # =========================
 # Carregar base (DADOS LIMPOS)
 # =========================
-<<<<<<< Updated upstream
-df = pd.read_csv('cardio_train_sem_outliers.csv', sep=';')
-=======
-df = pd.read_csv('../cardio_train_final.csv', sep=';')
->>>>>>> Stashed changes
+
+BASE_DIR = Path(__file__).resolve().parent
+
+ARQUIVO_ENTRADA = BASE_DIR / "cardio_train_sem_valores_invalidos.csv"
+
+if not ARQUIVO_ENTRADA.exists():
+    raise FileNotFoundError(f"Arquivo não encontrado: {ARQUIVO_ENTRADA}")
+
+df = pd.read_csv(ARQUIVO_ENTRADA, sep=";")
+
 
 # =========================
 # Informações gerais

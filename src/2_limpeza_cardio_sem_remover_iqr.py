@@ -16,7 +16,7 @@ import pandas as pd
 BASE_DIR = Path(__file__).resolve().parent
 
 ARQUIVO_ENTRADA = BASE_DIR / "cardio_train.csv"
-ARQUIVO_SAIDA = BASE_DIR / "cardio_train_sem_outliers.csv"
+ARQUIVO_SAIDA = BASE_DIR / "cardio_train_sem_valores_invalidos.csv"
 ARQUIVO_RELATORIO = BASE_DIR / "cardio_train_relatorio_limpeza.csv"
 ARQUIVO_REMOVIDOS = BASE_DIR / "cardio_train_linhas_removidas.csv"
 
