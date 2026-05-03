@@ -1,0 +1,6 @@
+criterio;registros_antes;registros_removidos;registros_restantes;percentual_removido
+Remover pressão sistólica inválida: ap_hi <= 0 ou ap_hi > 300;70000;47;69953;0.0671
+Remover pressão diastólica inválida: ap_lo <= 0 ou ap_lo > 200;69953;968;68985;1.3838
+Remover registros em que pressão sistólica é menor que a diastólica;68985;274;68711;0.3972
+Remover altura fora do intervalo plausível: height < 100 ou height > 220;68711;28;68683;0.0408
+Remover peso fora do intervalo plausível: weight < 30 ou weight > 200;68683;6;68677;0.0087

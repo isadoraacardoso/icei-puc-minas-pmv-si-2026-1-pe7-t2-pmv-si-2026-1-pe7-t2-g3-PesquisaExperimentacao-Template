@@ -24,6 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent
 ARQUIVO_ENTRADA = BASE_DIR / "cardio_train.csv"
 ARQUIVO_SAIDA = BASE_DIR / "cardio_train_sem_outliers.csv"
 ARQUIVO_RELATORIO = BASE_DIR / "cardio_train_relatorio_limpeza.csv"
+ARQUIVO_REMOVIDOS = BASE_DIR / "cardio_train_linhas_removidas.csv"
 
 
 # =============================================================================
@@ -52,11 +53,21 @@ print(f"Colunas iniciais: {df.shape[1]}")
 
 relatorio = []
 
+linhas_removidas = []
+
 def aplicar_filtro(df_atual, criterio, descricao):
     """
-    Aplica um filtro booleano ao DataFrame e registra quantos registros foram removidos.
+    Aplica um filtro booleano ao DataFrame, registra quantos registros foram removidos
+    e armazena as linhas removidas para análise posterior.
     """
     antes = len(df_atual)
+
+    removidos_df = df_atual[~criterio].copy()
+    removidos_df["criterio_remocao"] = descricao
+
+    if len(removidos_df) > 0:
+        linhas_removidas.append(removidos_df)
+
     df_filtrado = df_atual[criterio].copy()
     depois = len(df_filtrado)
     removidos = antes - depois
@@ -177,6 +188,13 @@ df_limpo.to_csv(ARQUIVO_SAIDA, sep=";", index=False)
 
 df_relatorio = pd.DataFrame(relatorio)
 df_relatorio.to_csv(ARQUIVO_RELATORIO, sep=";", index=False)
+
+if linhas_removidas:
+    df_removidos = pd.concat(linhas_removidas, ignore_index=True)
+    df_removidos.to_csv(ARQUIVO_REMOVIDOS, sep=";", index=False)
+else:
+    df_removidos = pd.DataFrame()
+    df_removidos.to_csv(ARQUIVO_REMOVIDOS, sep=";", index=False)
 
 print("\n" + "=" * 70)
 print("RESUMO FINAL DA LIMPEZA")
