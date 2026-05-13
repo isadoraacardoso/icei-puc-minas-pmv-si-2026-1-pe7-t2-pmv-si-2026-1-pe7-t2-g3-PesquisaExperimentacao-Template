@@ -138,9 +138,11 @@ O F1-score representa uma média harmônica entre precisão e recall. Essa métr
 
 ### AUC-ROC
 
-A AUC-ROC foi definida como a métrica principal do projeto. Ela avalia a capacidade discriminativa do modelo em diferentes limiares de decisão, medindo o quanto o modelo consegue separar corretamente pacientes com e sem doença cardiovascular.
+A AUC-ROC avalia a capacidade discriminativa do modelo em diferentes limiares de decisão, medindo o quanto o modelo consegue separar corretamente pacientes com e sem doença cardiovascular.
 
-A escolha da AUC-ROC como métrica principal se justifica porque o problema é uma classificação binária e a base está balanceada. Além disso, a AUC-ROC não depende de um único limiar de classificação, permitindo uma avaliação mais ampla do desempenho do modelo.
+Embora a métrica AUC-ROC tenha sido utilizada para avaliar a capacidade geral de discriminação do modelo, o contexto clínico do problema exige atenção especial aos falsos negativos. Em aplicações relacionadas à saúde cardiovascular, deixar de identificar corretamente um paciente com risco da doença pode gerar consequências mais graves do que classificar incorretamente um paciente saudável como pertencente à classe positiva.
+
+Dessa forma, além da análise da AUC-ROC, a sensibilidade (recall) foi considerada uma métrica prioritária na avaliação do modelo, pois mede a capacidade de identificar corretamente os pacientes positivos. Essa abordagem torna a avaliação mais coerente com o objetivo clínico do problema.
 
 ## Discussão dos resultados obtidos
 
