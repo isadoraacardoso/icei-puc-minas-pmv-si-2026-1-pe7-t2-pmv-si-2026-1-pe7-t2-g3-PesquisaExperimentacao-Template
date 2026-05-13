@@ -61,13 +61,7 @@ Dessa forma, não foi necessário aplicar técnicas de balanceamento como oversa
 
 ### Separação dos dados
 
-Foram realizados três experimentos com diferentes proporções de treino e teste:
-
-- 80% treino e 20% teste;
-- 75% treino e 25% teste;
-- 70% treino e 30% teste.
-
-Todas as divisões foram realizadas com estratificação da variável alvo, garantindo que a proporção de pacientes com e sem doença fosse preservada em todos os conjuntos.
+Para a etapa final de treinamento e avaliação do modelo, foi utilizada a estratégia de separação treino/teste na proporção 80/20. Embora tenham sido discutidas alternativas de divisão como 75/25 e 70/30 durante a fase exploratória do projeto, apenas o experimento com divisão 80/20 foi efetivamente implementado e mantido na versão final do pipeline disponibilizada no repositório.
 
 ### Validação cruzada
 
@@ -198,12 +192,12 @@ O pipeline de pesquisa e análise de dados foi estruturado da seguinte forma:
    - manutenção das variáveis categóricas e binárias já codificadas numericamente.
 
 5. Separação dos dados:
-   - realização de três divisões treino/teste: 80/20, 75/25 e 70/30;
+   - realização de treino/teste: 80/20;
    - uso de estratificação para preservar a proporção da variável alvo.
 
 6. Treinamento:
    - construção de pipeline com `ColumnTransformer` e `RandomForestClassifier`;
-   - treinamento do modelo em cada uma das três divisões.
+   - treinamento do modelo.
 
 7. Avaliação:
    - cálculo de AUC-ROC, acurácia, precisão, recall e F1-score;
@@ -213,7 +207,7 @@ O pipeline de pesquisa e análise de dados foi estruturado da seguinte forma:
    - validação cruzada estratificada com 5 folds.
 
 8. Registro dos resultados:
-   - salvamento dos gráficos em pastas separadas para cada divisão;
+   - salvamento dos gráficos;
    - salvamento das métricas em arquivos CSV;
    - consolidação das métricas em `metricas_random_forest_treino_teste.csv`.
 
