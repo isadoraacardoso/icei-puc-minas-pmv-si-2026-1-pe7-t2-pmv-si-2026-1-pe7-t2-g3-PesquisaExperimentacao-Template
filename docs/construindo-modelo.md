@@ -89,18 +89,37 @@ Outra vantagem do Random Forest é sua robustez em relação a ruídos e sua cap
 
 ### Parâmetros utilizados
 
-O modelo foi configurado com os seguintes parâmetros principais:
-
-- `n_estimators=100`: número de árvores da floresta;
-- `random_state=42`: garante reprodutibilidade dos resultados;
-- `n_jobs=-1`: permite utilizar todos os núcleos disponíveis da máquina para acelerar o treinamento.
-
 Foi utilizado um pipeline com duas etapas principais:
 
 1. pré-processamento das variáveis;
 2. treinamento do modelo Random Forest.
 
 O pré-processamento foi implementado com `ColumnTransformer`, aplicando `StandardScaler` às variáveis contínuas e mantendo as variáveis categóricas/binárias sem alteração.
+
+O modelo foi configurado com os seguintes parâmetros principais:
+
+- `n_estimators=100`: número de árvores da floresta;
+- `random_state=42`: garante reprodutibilidade dos resultados;
+- `n_jobs=-1`: permite utilizar todos os núcleos disponíveis da máquina para acelerar o treinamento;
+- `max_features`: estratégia de seleção de atributos.
+
+Exemplo de configurações avaliadas:
+| Configuração | Parâmetros                                | Resultado observado                                     |
+| ------------ | ----------------------------------------- | ------------------------------------------------------- |
+| Modelo 1     | `n_estimators=50`, `max_features="sqrt"`  | desempenho inferior e maior variação                    |
+| Modelo 2     | `n_estimators=100`, `max_features="sqrt"` | melhor equilíbrio entre desempenho e tempo              |
+| Modelo 3     | `n_estimators=200`, `max_features="log2"` | ganho pouco significativo com maior custo computacional |
+
+Após os testes, optou-se pela configuração:
+
+`RandomForestClassifier(
+    n_estimators=100,
+    max_features="sqrt",
+    random_state=42,
+    n_jobs=-1
+)`
+
+A escolha foi baseada no melhor equilíbrio entre desempenho, estabilidade e custo computacional. O parâmetro max_features="sqrt" foi mantido por ser uma configuração frequentemente recomendada para Random Forest em problemas de classificação, contribuindo para maior diversidade entre as árvores e redução de overfitting. 
 
 # Avaliação dos modelos criados
 
