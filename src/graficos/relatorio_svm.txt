@@ -1,0 +1,18 @@
+RESULTADOS - SVM
+========================
+
+Acurácia: 0.7369
+
+Matriz de Confusão:
+[[5405 1441]
+ [2173 4717]]
+
+Relatório de Classificação:
+              precision    recall  f1-score   support
+
+           0       0.71      0.79      0.75      6846
+           1       0.77      0.68      0.72      6890
+
+    accuracy                           0.74     13736
+   macro avg       0.74      0.74      0.74     13736
+weighted avg       0.74      0.74      0.74     13736
