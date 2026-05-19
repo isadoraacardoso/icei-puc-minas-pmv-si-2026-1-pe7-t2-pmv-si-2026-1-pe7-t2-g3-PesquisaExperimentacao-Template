@@ -61,13 +61,7 @@ Dessa forma, não foi necessário aplicar técnicas de balanceamento como oversa
 
 ### Separação dos dados
 
-Foram realizados três experimentos com diferentes proporções de treino e teste:
-
-- 80% treino e 20% teste;
-- 75% treino e 25% teste;
-- 70% treino e 30% teste.
-
-Todas as divisões foram realizadas com estratificação da variável alvo, garantindo que a proporção de pacientes com e sem doença fosse preservada em todos os conjuntos.
+Para a etapa final de treinamento e avaliação do modelo, foi utilizada a estratégia de separação treino/teste na proporção 80/20. Embora tenham sido discutidas alternativas de divisão como 75/25 e 70/30 durante a fase exploratória do projeto, apenas o experimento com divisão 80/20 foi efetivamente implementado e mantido na versão final do pipeline disponibilizada no repositório.
 
 ### Validação cruzada
 
@@ -89,18 +83,37 @@ Outra vantagem do Random Forest é sua robustez em relação a ruídos e sua cap
 
 ### Parâmetros utilizados
 
-O modelo foi configurado com os seguintes parâmetros principais:
-
-- `n_estimators=100`: número de árvores da floresta;
-- `random_state=42`: garante reprodutibilidade dos resultados;
-- `n_jobs=-1`: permite utilizar todos os núcleos disponíveis da máquina para acelerar o treinamento.
-
 Foi utilizado um pipeline com duas etapas principais:
 
 1. pré-processamento das variáveis;
 2. treinamento do modelo Random Forest.
 
 O pré-processamento foi implementado com `ColumnTransformer`, aplicando `StandardScaler` às variáveis contínuas e mantendo as variáveis categóricas/binárias sem alteração.
+
+O modelo foi configurado com os seguintes parâmetros principais:
+
+- `n_estimators=100`: número de árvores da floresta;
+- `random_state=42`: garante reprodutibilidade dos resultados;
+- `n_jobs=-1`: permite utilizar todos os núcleos disponíveis da máquina para acelerar o treinamento;
+- `max_features`: estratégia de seleção de atributos.
+
+Exemplo de configurações avaliadas:
+| Configuração | Parâmetros                                | Resultado observado                                     |
+| ------------ | ----------------------------------------- | ------------------------------------------------------- |
+| Modelo 1     | `n_estimators=50`, `max_features="sqrt"`  | desempenho inferior e maior variação                    |
+| Modelo 2     | `n_estimators=100`, `max_features="sqrt"` | melhor equilíbrio entre desempenho e tempo              |
+| Modelo 3     | `n_estimators=200`, `max_features="log2"` | ganho pouco significativo com maior custo computacional |
+
+Após os testes, optou-se pela configuração:
+
+`RandomForestClassifier(
+    n_estimators=100,
+    max_features="sqrt",
+    random_state=42,
+    n_jobs=-1
+)`
+
+A escolha foi baseada no melhor equilíbrio entre desempenho, estabilidade e custo computacional. O parâmetro max_features="sqrt" foi mantido por ser uma configuração frequentemente recomendada para Random Forest em problemas de classificação, contribuindo para maior diversidade entre as árvores e redução de overfitting. 
 
 # Avaliação dos modelos criados
 
@@ -179,12 +192,12 @@ O pipeline de pesquisa e análise de dados foi estruturado da seguinte forma:
    - manutenção das variáveis categóricas e binárias já codificadas numericamente.
 
 5. Separação dos dados:
-   - realização de três divisões treino/teste: 80/20, 75/25 e 70/30;
+   - realização de treino/teste: 80/20;
    - uso de estratificação para preservar a proporção da variável alvo.
 
 6. Treinamento:
    - construção de pipeline com `ColumnTransformer` e `RandomForestClassifier`;
-   - treinamento do modelo em cada uma das três divisões.
+   - treinamento do modelo.
 
 7. Avaliação:
    - cálculo de AUC-ROC, acurácia, precisão, recall e F1-score;
@@ -194,7 +207,7 @@ O pipeline de pesquisa e análise de dados foi estruturado da seguinte forma:
    - validação cruzada estratificada com 5 folds.
 
 8. Registro dos resultados:
-   - salvamento dos gráficos em pastas separadas para cada divisão;
+   - salvamento dos gráficos;
    - salvamento das métricas em arquivos CSV;
    - consolidação das métricas em `metricas_random_forest_treino_teste.csv`.
 
