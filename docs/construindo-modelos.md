@@ -274,3 +274,25 @@ O pipeline revisado é composto pelas seguintes etapas:
 
 As principais melhorias em relação ao pipeline original foram a inclusão explícita das etapas de validação cruzada, ajuste de hiperparâmetros, comparação sistemática de algoritmos e monitoramento contínuo, tornando o processo mais robusto e alinhado às boas práticas de ciência de dados e aprendizado de máquina.
 
+# Referências
+
+BREIMAN, Leo. Random forests. *Machine Learning*, v. 45, n. 1, p. 5–32, 2001.
+
+CORTES, Corinna; VAPNIK, Vladimir. Support-vector networks. *Machine Learning*, v. 20, n. 3, p. 273–297, 1995.
+
+PEDREGOSA, Fabian et al. Scikit-learn: Machine Learning in Python. *Journal of Machine Learning Research*, v. 12, p. 2825–2830, 2011. Disponível em: https://scikit-learn.org. Acesso em: 31 maio 2026.
+
+SULIANOVA, Svetlana. *Cardiovascular Disease Dataset*. Kaggle, 2019. Disponível em: https://www.kaggle.com/datasets/sulianova/cardiovascular-disease-dataset. Acesso em: 7 mar. 2026.
+
+HASTIE, Trevor; TIBSHIRANI, Robert; FRIEDMAN, Jerome. *The Elements of Statistical Learning: Data Mining, Inference, and Prediction*. 2. ed. New York: Springer, 2009.
+
+JAMES, Gareth et al. *An Introduction to Statistical Learning: with Applications in R*. 2. ed. New York: Springer, 2021.
+
+MCKINNEY, Wes. Data structures for statistical computing in Python. In: *Proceedings of the 9th Python in Science Conference*. Austin: SciPy, 2010. p. 56–61. Disponível em: https://pandas.pydata.org. Acesso em: 20 mar. 2026.
+
+HARRIS, Charles R. et al. Array programming with NumPy. *Nature*, v. 585, p. 357–362, 2020. Disponível em: https://numpy.org. Acesso em: 26 mar. 2026.
+
+VIRTANEN, Pauli et al. SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python. *Nature Methods*, v. 17, p. 261–272, 2020. Disponível em: https://scipy.org. Acesso em: 27 mar. 2026.
+
+PYTHON SOFTWARE FOUNDATION. *Python Language Reference, version 3.x*. Wilmington: Python Software Foundation, 2024. Disponível em: https://www.python.org. Acesso em: 20 mar. 2026.
+
