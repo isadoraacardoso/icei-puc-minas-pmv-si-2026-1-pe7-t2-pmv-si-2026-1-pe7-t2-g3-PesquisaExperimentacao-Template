@@ -1,1 +1,3 @@
 .*/
+*.onnx
+src/modelo_cardio.onnx
