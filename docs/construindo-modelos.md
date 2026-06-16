@@ -274,6 +274,37 @@ O pipeline revisado é composto pelas seguintes etapas:
 
 As principais melhorias em relação ao pipeline original foram a inclusão explícita das etapas de validação cruzada, ajuste de hiperparâmetros, comparação sistemática de algoritmos e monitoramento contínuo, tornando o processo mais robusto e alinhado às boas práticas de ciência de dados e aprendizado de máquina.
 
+# Ética em Pesquisa
+
+## Sensibilidade dos Dados
+
+Este projeto utiliza dados clínicos relacionados à saúde cardiovascular, que se enquadram na categoria de dados sensíveis conforme a Lei Geral de Proteção de Dados Pessoais (LGPD, Lei nº 13.709/2018), especificamente o artigo 11, que trata do tratamento de dados pessoais sensíveis referentes à saúde.
+
+O dataset utilizado — Cardiovascular Disease Dataset, disponibilizado publicamente na plataforma Kaggle — não contém identificadores diretos como nome, CPF ou endereço. Ainda assim, a combinação de variáveis como idade, gênero, medidas antropométricas e indicadores clínicos pode, em contextos específicos, permitir a reidentificação de indivíduos. Por esse motivo, o uso desses dados deve ser restrito a finalidades de pesquisa acadêmica, com acesso controlado e sem divulgação de registros individuais.
+
+## Limitações do Modelo e Uso Responsável
+
+Os modelos desenvolvidos neste projeto têm finalidade exclusivamente acadêmica e exploratória. Eles não devem ser utilizados como substitutos de diagnóstico clínico, nem devem orientar decisões médicas sem avaliação profissional qualificada.
+
+Entre as principais limitações que devem ser consideradas:
+
+* Os dados foram coletados em contexto específico e podem não representar adequadamente outras populações;
+* A variável alvo (`cardio`) indica a presença autorrelatada ou registrada de doença cardiovascular, sem especificação do tipo ou grau de gravidade;
+* O desempenho dos modelos é avaliado em termos estatísticos, mas erros de classificação — especialmente falsos negativos — têm consequências clínicas reais para pacientes;
+* Nenhum dos modelos foi validado em ambiente clínico ou por especialistas da área de saúde.
+
+## Vieses Potenciais
+
+O dataset apresenta desbalanceamento mínimo entre as classes, o que favorece a avaliação estatística, mas não elimina a possibilidade de vieses sistemáticos. Em particular:
+
+* A distribuição de gênero e faixa etária nos dados pode não refletir a prevalência real da doença na população geral;
+* Atributos como tabagismo e consumo de álcool são autorrelatados, sujeitos a subnotificação;
+* A ausência de variáveis socioeconômicas limita a capacidade do modelo de capturar fatores de risco estruturais associados à doença cardiovascular.
+
+## Responsabilidade dos Pesquisadores
+
+O grupo compromete-se a utilizar os dados exclusivamente para fins acadêmicos, sem comercialização, distribuição de predições individuais ou aplicação em contextos que envolvam decisões sobre saúde de pessoas reais. Qualquer extensão futura deste trabalho que envolva dados pessoais identificáveis deverá ser submetida à avaliação de comitê de ética em pesquisa (CEP), conforme resolução CNS nº 466/2012.
+
 # Referências
 
 BREIMAN, Leo. Random forests. *Machine Learning*, v. 45, n. 1, p. 5–32, 2001.
