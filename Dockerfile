@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 8080
 
 # Comando para rodar o Streamlit configurando a porta para o Cloud Run
-CMD ["python", "-m", "streamlit", "run", "app.py", "--server.port=8080", "--server.address=0.0.0.0"]
+CMD ["python", "-m", "streamlit", "run", "app.py", "--server.port=7860", "--server.address=0.0.0.0"]
