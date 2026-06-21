@@ -1,3 +1,4 @@
 .*/
 *.onnx
 src/modelo_cardio.onnx
+src/modelo_rf.pkl
