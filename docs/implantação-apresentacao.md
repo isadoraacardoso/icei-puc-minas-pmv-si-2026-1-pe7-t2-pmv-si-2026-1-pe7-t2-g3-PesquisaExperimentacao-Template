@@ -75,7 +75,7 @@ Para a camada de apresentação, utilizou-se o framework Streamlit. O script pri
 3. Sem realizar qualquer reprocessamento histórico, atualização de pesos estatísticos ou reajuste de treinamento, os dados novos são injetados diretamente na função em memória:
    ```python
    predicao = modelo.predict(dados_usuario_df)
-``
+
 4. A predição é processada em milissegundos e exibida em tela para o usuário final, caracterizando o mecanismo de inferência dinâmica em tempo de execução.
 
 ### 3.3. Configuração do Servidor e Execução Resiliente em Segundo Plano
