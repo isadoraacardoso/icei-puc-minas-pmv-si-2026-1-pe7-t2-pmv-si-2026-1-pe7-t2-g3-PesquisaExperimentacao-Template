@@ -70,6 +70,8 @@ O limite teórico máximo de saturação da instância configurada ocorre quando
 
 ## 3. Implantação do Artefato em Produção (Inferência Dinâmica)
 
+Link de Acesso Homologado: Conforme planejamento de capacidade e testes de estresse documentados, o artefato de software permanece em execução contínua na porta parametrizada da AWS, acessível aos avaliadores por meio da URL: http://98.93.8.249:8501/
+
 A arquitetura de software implementada em produção foi estruturada para garantir o desacoplamento entre a fase de treinamento do modelo e a fase de consumo operacional.
 
 ### 3.1. Salvamento e Persistência do Modelo
@@ -79,3 +81,51 @@ O modelo preditivo *Random Forest*, após atingir as métricas de validação sa
 import joblib
 # Persistência do modelo e do pipeline de transformação dentro da pasta src
 joblib.dump(modelo_final, 'src/modelo_rf.pkl')
+```
+
+### 3.2. Interface Web em Tempo de Execução com Streamlit
+Para a camada de apresentação, utilizou-se o framework Streamlit. O script principal app.py foi projetado para agir como um microsserviço de inferência de ciclo único. O arquivo .pkl é carregado na memória RAM do servidor apenas uma vez durante o bootstrap da aplicação.Quando um usuário acessa a URL pública fornecida pela infraestrutura da AWS, a aplicação executa o seguinte fluxo em tempo real:
+1. O usuário preenche os parâmetros clínicos ou cadastrais estruturados em campos de entrada numéricos e de seleção (widgets).
+2. Ao acionar o evento do botão de submissão, o Streamlit captura as variáveis brutas do formulário e as organiza estruturalmente em um objeto pandas.DataFrame.
+3. Sem realizar qualquer reprocessamento histórico, atualização de pesos estatísticos ou reajuste de treinamento, os dados novos são injetados diretamente na função em memória:
+   ```python
+   predicao = modelo.predict(dados_usuario_df)
+``
+4. A predição é processada em milissegundos e exibida em tela para o usuário final, caracterizando o mecanismo de inferência dinâmica em tempo de execução.
+
+### 3.3. Configuração do Servidor e Execução Resiliente em Segundo Plano
+Dado que o arquivo do modelo preditivo excede o limite convencional de envio do GitHub (210,11 MB), os artefatos foram sincronizados diretamente na instância Linux da AWS EC2, estruturados na seguinte árvore de diretórios:
+```Plaintext
+/home/ubuntu/projeto-eixo7/
+├── app.py                  <-- Script principal da interface Streamlit
+├── requirements.txt        <-- Dependências de pacotes Python
+└── src/
+    └── modelo_rf.pkl      <-- Modelo preditivo Random Forest (210.11 MB)
+```
+Para garantir a sustentabilidade do serviço na nuvem de forma contínua, sem depender de uma sessão SSH ativa, o processo foi desvinculado do terminal utilizando o utilitário nohup na porta padrão liberada do protocolo TCP (8501):
+```Bash
+nohup python3 -m streamlit run app.py --server.port 8501 --server.address 0.0.0.0 > streamlit.log 2>&1 &
+```
+
+## 4. Plano de Monitoramento de Desempenho e Alertas 
+A governança do ambiente em nuvem da AWS foi estruturada por meio do AWS CloudWatch, um serviço nativo de monitoramento de recursos e aplicações que coleta e processa dados brutos em métricas legíveis em tempo real.
+
+### 4.1. Métricas Coletadas e Justificativa de Observabilidade
+- Utilização de CPU (CPU Utilization): Mapeada em intervalos de 5 minutos. Essencial para verificar se o processamento das inferências dinâmicas está condizente com a modelagem matemática calculada ($22,5\%$).
+- Créditos de CPU (CPUCreditBalance): Visto que as instâncias da família t2 funcionam por um sistema de acúmulo de créditos de processamento, o monitoramento desse saldo impede que a máquina sofra um estrangulamento de performance forçado pela AWS por consumo excessivo de processamento.
+- Tráfego de Rede (Network In / Network Out): Mede o volume de dados trafegado por segundo para monitorar anomalias ou possíveis ataques de negação de serviço (DoS) que possam esgotar a camada gratuita.
+
+### 4.2. Configuração de Alertas e Ações Dinâmicas
+Para mitigar riscos de degradação do serviço ou custos inesperados, foram estabelecidas duas regras automatizadas de alerta:
+1. Alerta de Degradação de Performance (Métrica de CPU): Disparado via CloudWatch Alarm caso a utilização média de CPU ultrapasse $80\%$ por 3 períodos consecutivos de 5 minutos. A ação atrelada envia uma notificação via protocolo AWS SNS (Simple Notification Service) para o e-mail do grupo de engenharia para análise de concorrência.
+2. Alerta de Estouro de Escopo Financeiro (Métrica de Billing): Configurado na ferramenta AWS Budgets para disparar um alerta crítico imediato assim que a projeção de gastos mensais do ecossistema da AWS atingir $1,00 USD, notificando o administrador para interrupção manual da instância, blindando o cartão de faturamento de cobranças indevidas.
+
+## 5. Demonstração e Apresentação da Solução
+
+Produzimos um registro audiovisual de até 15 minutos sintetizando o escopo geral do projeto:
+
+
+https://github.com/user-attachments/assets/d3ae3d09-c3c6-4d96-a043-6bce68bb0e9e
+
+
+
