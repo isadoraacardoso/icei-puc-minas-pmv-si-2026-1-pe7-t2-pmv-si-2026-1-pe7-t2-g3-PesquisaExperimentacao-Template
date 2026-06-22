@@ -24,10 +24,15 @@ O deploy definitivo da solução foi consolidado na plataforma **Amazon Web Serv
 
 ## 2. Vídeo de Apresentação Final da Solução
 
-O vídeo abaixo possui duração de até 15 minutos e sintetiza os resultados da pesquisa experimental desenvolvida. 
+O vídeo abaixo possui duração de aproximadamente 11 minutos e sintetiza os resultados da pesquisa experimental desenvolvida. 
 
 
 
 https://github.com/user-attachments/assets/29c2bd29-60f1-4e5e-8589-3210c302d971
+
+
+## 3. Slides de Apresentação Final da Solução
+
+[Slides de apresentação final eixo 7.pdf](https://github.com/user-attachments/files/29213366/Slides.de.apresentacao.final.eixo.7.pdf)
 
 
