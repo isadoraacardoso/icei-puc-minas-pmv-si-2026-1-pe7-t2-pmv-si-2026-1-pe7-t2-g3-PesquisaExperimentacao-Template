@@ -107,8 +107,9 @@ Para mitigar riscos de degradação do serviço ou custos inesperados, foram est
 
 ## 5. Demonstração e Apresentação da Solução
 
-Produzimos um registro audiovisual de até 15 minutos sintetizando o escopo geral do projeto:
+Produzimos slides e um vídeo de aproximadamente 11 minutos sintetizando o escopo geral do projeto:
 
+[Slides de apresentação final eixo 7.pdf](https://github.com/user-attachments/files/29213402/Slides.de.apresentacao.final.eixo.7.pdf)
 
 https://github.com/user-attachments/assets/d3ae3d09-c3c6-4d96-a043-6bce68bb0e9e
 
