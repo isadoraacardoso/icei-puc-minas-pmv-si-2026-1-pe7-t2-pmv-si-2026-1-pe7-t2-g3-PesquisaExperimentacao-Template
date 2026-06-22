@@ -35,9 +35,9 @@ Com base nessa análise, o projeto busca experimentar diferentes modelos de apre
 
 ## Instruções de utilização
 
-Acesso em Produção (quando disponível)
-* URL: https://<seu-dominio>/...
-* Status: online/homologação
+Acesso em Produção
+* URL: [http://98.93.8.249:8501/](http://98.93.8.249:8501/)
+* Status: online
 
 # Código
 
