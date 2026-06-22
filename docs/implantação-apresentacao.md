@@ -111,7 +111,8 @@ Produzimos slides e um vídeo de aproximadamente 11 minutos sintetizando o escop
 
 [Slides de apresentação final eixo 7.pdf](https://github.com/user-attachments/files/29213402/Slides.de.apresentacao.final.eixo.7.pdf)
 
-https://github.com/user-attachments/assets/d3ae3d09-c3c6-4d96-a043-6bce68bb0e9e
+[Vídeo de apresentação final](https://sgapucminasbr.sharepoint.com/sites/team_sga_2414_2026_1_2291102-Grupo3-Quarta-20h30/_layouts/15/stream.aspx?id=%2Fsites%2Fteam%5Fsga%5F2414%5F2026%5F1%5F2291102%2DGrupo3%2DQuarta%2D20h30%2FDocumentos%20Compartilhados%2FVideo%20apresenta%C3%A7%C3%A3o%20projeto%20eixo%207%20grupo%203%20%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E427b9631%2D8366%2D4fbd%2Dad47%2D79c28e78a44f)
+
 
 
 
